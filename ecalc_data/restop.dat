@@ -1,0 +1,1350 @@
+! RESIDUE TOPOLOGY FILE FOR PROTEINS USING EXPLICIT HYDROGEN ATOMS V7
+! Based on CHARMM RTOPH7 as modified for OML
+! N.B. ATOM order is critical; must be N,H,CA,C,O,s/c for CSearch
+! 22.05.95 PRO  CD now excludes -C    By: ACRM
+!          CTER OT2 now excludes -C and -O, but this doesn't seem to make
+!             any difference
+! 06.02.03 Fixed errors in exclusions and TORSION for NTER - was referring
+!          to +H instead of +HT3
+
+RESIDUE ALA     0.00000
+ATOM N    NH1    -0.20000     "H    CA   CB   C   "
+ATOM H    H       0.12000     "CA  "
+ATOM CA   CH1E    0.07500     "CB   C    O    +N  "
+ATOM CB   CH3E    0.02000     "C   "
+ATOM C    C       0.35000     "O    +N   +H   +CA "
+ATOM O    O      -0.36500     "+N  "
+BOND N    CA        
+BOND CA   C         
+BOND C    +N        
+BOND C    O         
+BOND N    H   
+BOND CA   CB  
+ANGLE -C   N    CA             
+ANGLE N    CA   C              
+ANGLE CA   C    +N  
+ANGLE CA   C    O              
+ANGLE O    C    +N             
+ANGLE -C   N    H   
+ANGLE H    N    CA             
+ANGLE N    CA   CB             
+ANGLE C    CA   CB  
+TORSION -C   N    CA   C         
+TORSION N    CA   C    +N        
+TORSION CA   C    +N   +CA 
+IMPROPER N    -C   CA   H         
+IMPROPER C    CA   +N   O         
+IMPROPER CA   N    C    CB  
+DONOR H    N    -C   CA  
+ACCEPTOR O             
+BUILD -C   CA   *N   H      0.0000    0.00  180.00    0.00   0.0000
+BUILD -C   N    CA   C      0.0000    0.00  180.00    0.00   0.0000
+BUILD N    CA   C    +N     0.0000    0.00  180.00    0.00   0.0000
+BUILD +N   CA   *C   O      0.0000    0.00  180.00    0.00   0.0000
+BUILD CA   C    +N   +CA    0.0000    0.00  180.00    0.00   0.0000
+BUILD N    C    *CA  CB     0.0000    0.00  120.00    0.00   0.0000
+
+RESIDUE ARG     1.00000
+ATOM N    NH1    -0.20000     "H    CA   CB   C   "
+ATOM H    H       0.12000     "CA  "
+ATOM CA   CH1E    0.07500     "CB   CG   C    O    +N  "
+ATOM CB   CH2E    0.03900     "CG   CD   C   "
+ATOM CG   CH2E    0.04400     "CD   NE  "
+ATOM CD   CH2E    0.11500     "NE   HE   CZ  "
+ATOM NE   NH1    -0.20000     "HE   CZ   NH1  NH2 "
+ATOM HE   H       0.17100     "CZ  "
+ATOM CZ   C       0.46000     "NH1  HH11 HH12 NH2  HH21 HH22"
+ATOM NH1  NC2    -0.20000     "HH11 HH12 NH2 "
+ATOM HH11 HC      0.19800     "HH12"
+ATOM HH12 HC      0.19400     "    "
+ATOM NH2  NC2    -0.20000     "HH21 HH22"
+ATOM HH21 HC      0.19400     "HH22"
+ATOM HH22 HC      0.19800     "    "
+ATOM C    C       0.35200     "O    +N   +H   +CA "
+ATOM O    O      -0.36000     "+N  "
+BOND N    CA        
+BOND CA   C         
+BOND C    +N        
+BOND C    O         
+BOND N    H   
+BOND CA   CB        
+BOND CB   CG        
+BOND CG   CD        
+BOND CD   NE        
+BOND NE   HE  
+BOND NE   CZ        
+BOND CZ   NH1       
+BOND CZ   NH2       
+BOND NH1  HH11      
+BOND NH1  HH12
+BOND NH2  HH21      
+BOND NH2  HH22
+ANGLE -C   N    CA             
+ANGLE N    CA   C              
+ANGLE CA   C    +N  
+ANGLE CA   C    O              
+ANGLE O    C    +N             
+ANGLE -C   N    H   
+ANGLE H    N    CA             
+ANGLE N    CA   CB             
+ANGLE C    CA   CB  
+ANGLE CA   CB   CG             
+ANGLE CB   CG   CD             
+ANGLE CG   CD   NE  
+ANGLE CD   NE   HE             
+ANGLE CD   NE   CZ             
+ANGLE HE   NE   CZ  
+ANGLE NE   CZ   NH1            
+ANGLE NE   CZ   NH2            
+ANGLE NH1  CZ   NH2 
+ANGLE CZ   NH1  HH11           
+ANGLE CZ   NH1  HH12           
+ANGLE HH11 NH1  HH12
+ANGLE CZ   NH2  HH21           
+ANGLE CZ   NH2  HH22           
+ANGLE HH21 NH2  HH22
+TORSION -C   N    CA   C         
+TORSION N    CA   C    +N        
+TORSION CA   C    +N   +CA 
+TORSION N    CA   CB   CG        
+TORSION CA   CB   CG   CD        
+TORSION CB   CG   CD   NE  
+TORSION CG   CD   NE   CZ        
+TORSION CD   NE   CZ   NH1       
+TORSION NE   CZ   NH1  HH11
+TORSION NE   CZ   NH2  HH21      
+TORSION NE   CZ   NH1  HH12      
+TORSION NE   CZ   NH2  HH22
+IMPROPER N    -C   CA   H         
+IMPROPER C    CA   +N   O         
+IMPROPER CA   N    C    CB  
+IMPROPER NE   CD   CZ   HE        
+IMPROPER CZ   NH1  NH2  NE  
+DONOR H    N    -C   CA  
+DONOR HE   NE   CZ   CD 
+DONOR HH11 NH1  CZ   NE  
+DONOR HH12 NH1  CZ   NH2 
+DONOR HH21 NH2  CZ   NH1 
+DONOR HH22 NH2  CZ   NE  
+ACCEPTOR O             
+BUILD -C   CA   *N   H      0.0000    0.00  180.00    0.00   0.0000
+BUILD -C   N    CA   C      0.0000    0.00  180.00    0.00   0.0000
+BUILD N    CA   C    +N     0.0000    0.00  180.00    0.00   0.0000
+BUILD +N   CA   *C   O      0.0000    0.00  180.00    0.00   0.0000
+BUILD CA   C    +N   +CA    0.0000    0.00  180.00    0.00   0.0000
+BUILD N    C    *CA  CB     0.0000    0.00  120.00    0.00   0.0000
+BUILD C    CA   CB   CG     0.0000    0.00  180.00    0.00   0.0000
+BUILD CA   CB   CG   CD     0.0000    0.00  180.00    0.00   0.0000
+BUILD CB   CG   CD   NE     0.0000    0.00  180.00    0.00   0.0000
+BUILD CG   CD   NE   CZ     0.0000    0.00  180.00    0.00   0.0000
+BUILD CD   NE   CZ   NH1    0.0000    0.00  180.00    0.00   0.0000
+BUILD NH1  NE   *CZ  NH2    0.0000    0.00  180.00    0.00   0.0000
+BUILD CD   CZ   *NE  HE     0.0000    0.00  180.00    0.00   0.0000
+BUILD NE   CZ   NH1  HH11   0.0000    0.00  180.00    0.00   0.0000
+BUILD HH11 CZ   *NH1 HH12   0.0000    0.00  180.00    0.00   0.0000
+BUILD NE   CZ   NH2  HH21   0.0000    0.00  180.00    0.00   0.0000
+BUILD HH21 CZ   *NH2 HH22   0.0000    0.00  180.00    0.00   0.0000
+
+RESIDUE ASN     0.00000
+ATOM N    NH1    -0.19500     "H    CA   CB   C   "
+ATOM H    H       0.12000     "CA  "
+ATOM CA   CH1E    0.09200     "CB   CG   C    O    +N  "
+ATOM CB   CH2E   -0.01500     "CG   OD1  ND2  C   "
+ATOM CG   C       0.35500     "OD1  ND2  HD21 HD22"
+ATOM OD1  O      -0.36500     "ND2 "
+ATOM ND2  NH2    -0.24500     "HD21 HD22"
+ATOM HD21 H       0.14000     "HD22"
+ATOM HD22 H       0.12000     "    "
+ATOM C    C       0.35000     "O    +N   +H   +CA "
+ATOM O    O      -0.35700     "+N  "
+BOND N    CA        
+BOND CA   C         
+BOND C    +N        
+BOND C    O         
+BOND N    H   
+BOND CA   CB        
+BOND CB   CG        
+BOND CG   OD1       
+BOND CG   ND2       
+BOND ND2  HD21
+BOND ND2  HD22
+ANGLE -C   N    CA             
+ANGLE N    CA   C              
+ANGLE CA   C    +N  
+ANGLE CA   C    O              
+ANGLE O    C    +N             
+ANGLE -C   N    H   
+ANGLE H    N    CA             
+ANGLE N    CA   CB             
+ANGLE C    CA   CB  
+ANGLE CA   CB   CG             
+ANGLE CB   CG   OD1            
+ANGLE CB   CG   ND2 
+ANGLE OD1  CG   ND2            
+ANGLE CG   ND2  HD21           
+ANGLE CG   ND2  HD22
+ANGLE HD21 ND2  HD22
+TORSION -C   N    CA   C         
+TORSION N    CA   C    +N        
+TORSION CA   C    +N   +CA 
+TORSION N    CA   CB   CG        
+TORSION CA   CB   CG   OD1       
+TORSION CB   CG   ND2  HD21
+IMPROPER N    -C   CA   H         
+IMPROPER C    CA   +N   O         
+IMPROPER CA   N    C    CB  
+IMPROPER CG   OD1  ND2  CB        
+IMPROPER ND2  HD21 HD22 CG  
+DONOR H    N    -C   CA  
+DONOR HD21 ND2  CG   OD1 
+DONOR HD22 ND2  CG   CB  
+ACCEPTOR OD1           
+ACCEPTOR O             
+BUILD -C   CA   *N   H      0.0000    0.00  180.00    0.00   0.0000
+BUILD -C   N    CA   C      0.0000    0.00  180.00    0.00   0.0000
+BUILD N    CA   C    +N     0.0000    0.00  180.00    0.00   0.0000
+BUILD +N   CA   *C   O      0.0000    0.00  180.00    0.00   0.0000
+BUILD CA   C    +N   +CA    0.0000    0.00  180.00    0.00   0.0000
+BUILD N    C    *CA  CB     0.0000    0.00  120.00    0.00   0.0000
+BUILD C    CA   CB   CG     0.0000    0.00  180.00    0.00   0.0000
+BUILD CA   CB   CG   OD1    0.0000    0.00  180.00    0.00   0.0000
+BUILD OD1  CB   *CG  ND2    0.0000    0.00  180.00    0.00   0.0000
+BUILD OD1  CG   ND2  HD21   0.0000    0.00  180.00    0.00   0.0000
+BUILD HD21 CG   *ND2 HD22   0.0000    0.00  180.00    0.00   0.0000
+
+RESIDUE ASP    -1.00000
+ATOM N    NH1    -0.21000     "H    CA   CB   C   "
+ATOM H    H       0.10000     "CA  "
+ATOM CA   CH1E    0.07000     "CB   CG   C    O    +N  "
+ATOM CB   CH2E   -0.15000     "CG   OD1  OD2  C   "
+ATOM CG   C       0.36500     "OD1  OD2 "
+ATOM OD1  OC     -0.57500     "OD2 "
+ATOM OD2  OC     -0.57500     "    "
+ATOM C    C       0.35500     "O    +N   +H   +CA "
+ATOM O    O      -0.38000     "+N  "
+BOND N    CA        
+BOND CA   C         
+BOND C    +N        
+BOND C    O         
+BOND N    H   
+BOND CA   CB        
+BOND CB   CG        
+BOND CG   OD1       
+BOND CG   OD2 
+ANGLE -C   N    CA             
+ANGLE N    CA   C              
+ANGLE CA   C    +N  
+ANGLE CA   C    O              
+ANGLE O    C    +N             
+ANGLE -C   N    H   
+ANGLE H    N    CA             
+ANGLE N    CA   CB             
+ANGLE C    CA   CB  
+ANGLE CA   CB   CG             
+ANGLE CB   CG   OD1            
+ANGLE CB   CG   OD2 
+ANGLE OD1  CG   OD2 
+TORSION -C   N    CA   C         
+TORSION N    CA   C    +N        
+TORSION CA   C    +N   +CA 
+TORSION N    CA   CB   CG        
+TORSION CA   CB   CG   OD1 
+IMPROPER N    -C   CA   H         
+IMPROPER C    CA   +N   O         
+IMPROPER CA   N    C    CB  
+IMPROPER CG   OD1  OD2  CB  
+DONOR H    N    -C   CA  
+ACCEPTOR OD1           
+ACCEPTOR OD2           
+ACCEPTOR O             
+BUILD -C   CA   *N   H      0.0000    0.00  180.00    0.00   0.0000
+BUILD -C   N    CA   C      0.0000    0.00  180.00    0.00   0.0000
+BUILD N    CA   C    +N     0.0000    0.00  180.00    0.00   0.0000
+BUILD +N   CA   *C   O      0.0000    0.00  180.00    0.00   0.0000
+BUILD CA   C    +N   +CA    0.0000    0.00  180.00    0.00   0.0000
+BUILD N    C    *CA  CB     0.0000    0.00  120.00    0.00   0.0000
+BUILD C    CA   CB   CG     0.0000    0.00  180.00    0.00   0.0000
+BUILD CA   CB   CG   OD1    0.0000    0.00  180.00    0.00   0.0000
+BUILD OD1  CB   *CG  OD2    0.0000    0.00  180.00    0.00   0.0000
+
+RESIDUE CYS     0.00000
+ATOM N    NH1    -0.19500     "H    CA   CB   C   "
+ATOM H    H       0.12000     "CA  "
+ATOM CA   CH1E    0.09200     "CB   SG   C    O    +N  "
+ATOM CB   CH2E    0.04000     "SG   C   "
+ATOM SG   SH1E   -0.05000     "    "
+ATOM C    C       0.35000     "O    +N   +H   +CA "
+ATOM O    O      -0.35700     "+N  "
+BOND N    CA        
+BOND CA   C         
+BOND C    +N        
+BOND C    O         
+BOND N    H   
+BOND CA   CB        
+BOND CB   SG  
+ANGLE -C   N    CA             
+ANGLE N    CA   C              
+ANGLE CA   C    +N  
+ANGLE CA   C    O              
+ANGLE O    C    +N             
+ANGLE -C   N    H   
+ANGLE H    N    CA             
+ANGLE N    CA   CB             
+ANGLE C    CA   CB  
+ANGLE CA   CB   SG  
+TORSION -C   N    CA   C         
+TORSION N    CA   C    +N        
+TORSION CA   C    +N   +CA 
+TORSION N    CA   CB   SG  
+IMPROPER N    -C   CA   H         
+IMPROPER C    CA   +N   O         
+IMPROPER CA   N    C    CB  
+DONOR H    N    -C   CA  
+ACCEPTOR O             
+BUILD -C   CA   *N   H      0.0000    0.00  180.00    0.00   0.0000
+BUILD -C   N    CA   C      0.0000    0.00  180.00    0.00   0.0000
+BUILD N    CA   C    +N     0.0000    0.00  180.00    0.00   0.0000
+BUILD +N   CA   *C   O      0.0000    0.00  180.00    0.00   0.0000
+BUILD CA   C    +N   +CA    0.0000    0.00  180.00    0.00   0.0000
+BUILD N    C    *CA  CB     0.0000    0.00  120.00    0.00   0.0000
+BUILD C    CA   CB   SG     0.0000    0.00  180.00    0.00   0.0000
+
+RESIDUE GLN     0.00000
+ATOM N    NH1    -0.20000     "H    CA   CB   C   "
+ATOM H    H       0.12000     "CA  "
+ATOM CA   CH1E    0.06500     "CB   CG   C    O    +N  "
+ATOM CB   CH2E    0.04200     "CG   CD   C   "
+ATOM CG   CH2E   -0.01600     "CD   OE1  NE2 "
+ATOM CD   C       0.36100     "OE1  NE2  HE21 HE22"
+ATOM OE1  O      -0.37000     "NE2 "
+ATOM NE2  NH2    -0.24400     "HE21 HE22"
+ATOM HE21 H       0.13600     "HE22"
+ATOM HE22 H       0.11800     "    "
+ATOM C    C       0.35000     "O    +N   +H   +CA "
+ATOM O    O      -0.36200     "+N  "
+BOND N    CA        
+BOND CA   C         
+BOND C    +N        
+BOND C    O         
+BOND N    H   
+BOND CA   CB        
+BOND CB   CG        
+BOND CG   CD        
+BOND CD   OE1       
+BOND CD   NE2 
+BOND NE2  HE21      
+BOND NE2  HE22
+ANGLE -C   N    CA             
+ANGLE N    CA   C              
+ANGLE CA   C    +N  
+ANGLE CA   C    O              
+ANGLE O    C    +N             
+ANGLE -C   N    H   
+ANGLE H    N    CA             
+ANGLE N    CA   CB             
+ANGLE C    CA   CB  
+ANGLE CA   CB   CG             
+ANGLE CB   CG   CD             
+ANGLE CG   CD   OE1 
+ANGLE CG   CD   NE2            
+ANGLE OE1  CD   NE2            
+ANGLE CD   NE2  HE21
+ANGLE CD   NE2  HE22           
+ANGLE HE21 NE2  HE22
+TORSION -C   N    CA   C         
+TORSION N    CA   C    +N        
+TORSION CA   C    +N   +CA 
+TORSION N    CA   CB   CG        
+TORSION CA   CB   CG   CD        
+TORSION CB   CG   CD   OE1 
+TORSION CG   CD   NE2  HE21
+IMPROPER N    -C   CA   H         
+IMPROPER C    CA   +N   O         
+IMPROPER CA   N    C    CB  
+IMPROPER CD   OE1  NE2  CG        
+IMPROPER NE2  HE21 HE22 CD  
+DONOR H    N    -C   CA  
+DONOR HE21 NE2  CD   OE1 
+DONOR HE22 NE2  CD   CG  
+ACCEPTOR OE1           
+ACCEPTOR O             
+BUILD -C   CA   *N   H      0.0000    0.00  180.00    0.00   0.0000
+BUILD -C   N    CA   C      0.0000    0.00  180.00    0.00   0.0000
+BUILD N    CA   C    +N     0.0000    0.00  180.00    0.00   0.0000
+BUILD +N   CA   *C   O      0.0000    0.00  180.00    0.00   0.0000
+BUILD CA   C    +N   +CA    0.0000    0.00  180.00    0.00   0.0000
+BUILD N    C    *CA  CB     0.0000    0.00  120.00    0.00   0.0000
+BUILD C    CA   CB   CG     0.0000    0.00  180.00    0.00   0.0000
+BUILD CA   CB   CG   CD     0.0000    0.00  180.00    0.00   0.0000
+BUILD CB   CG   CD   OE1    0.0000    0.00  180.00    0.00   0.0000
+BUILD OE1  CG   *CD  NE2    0.0000    0.00  180.00    0.00   0.0000
+BUILD OE1  CD   NE2  HE21   0.0000    0.00  180.00    0.00   0.0000
+BUILD HE21 CD   *NE2 HE22   0.0000    0.00  180.00    0.00   0.0000
+
+RESIDUE GLU    -1.00000
+ATOM N    NH1    -0.20000     "H    CA   CB   C   "
+ATOM H    H       0.10500     "CA  "
+ATOM CA   CH1E    0.05000     "CB   CG   C    O    +N  "
+ATOM CB   CH2E    0.01000     "CG   CD   C   "
+ATOM CG   CH2E   -0.15500     "CD   OE1  OE2 "
+ATOM CD   C       0.36500     "OE1  OE2 "
+ATOM OE1  OC     -0.57500     "OE2 "
+ATOM OE2  OC     -0.57500     "    "
+ATOM C    C       0.35500     "O    +N   +H   +CA "
+ATOM O    O      -0.38000     "+N  "
+BOND N    CA        
+BOND CA   C         
+BOND C    +N        
+BOND C    O         
+BOND N    H   
+BOND CA   CB        
+BOND CB   CG        
+BOND CG   CD        
+BOND CD   OE1       
+BOND CD   OE2 
+ANGLE -C   N    CA             
+ANGLE N    CA   C              
+ANGLE CA   C    +N  
+ANGLE CA   C    O              
+ANGLE O    C    +N             
+ANGLE -C   N    H   
+ANGLE H    N    CA             
+ANGLE N    CA   CB             
+ANGLE C    CA   CB  
+ANGLE CA   CB   CG             
+ANGLE CB   CG   CD             
+ANGLE CG   CD   OE1 
+ANGLE CG   CD   OE2            
+ANGLE OE1  CD   OE2 
+TORSION -C   N    CA   C         
+TORSION N    CA   C    +N        
+TORSION CA   C    +N   +CA 
+TORSION N    CA   CB   CG        
+TORSION CA   CB   CG   CD        
+TORSION CB   CG   CD   OE1 
+IMPROPER N    -C   CA   H         
+IMPROPER C    CA   +N   O         
+IMPROPER CA   N    C    CB  
+IMPROPER CD   OE1  OE2  CG  
+DONOR H    N    -C   CA  
+ACCEPTOR OE1           
+ACCEPTOR OE2           
+ACCEPTOR O             
+BUILD -C   CA   *N   H      0.0000    0.00  180.00    0.00   0.0000
+BUILD -C   N    CA   C      0.0000    0.00  180.00    0.00   0.0000
+BUILD N    CA   C    +N     0.0000    0.00  180.00    0.00   0.0000
+BUILD +N   CA   *C   O      0.0000    0.00  180.00    0.00   0.0000
+BUILD CA   C    +N   +CA    0.0000    0.00  180.00    0.00   0.0000
+BUILD N    C    *CA  CB     0.0000    0.00  120.00    0.00   0.0000
+BUILD C    CA   CB   CG     0.0000    0.00  180.00    0.00   0.0000
+BUILD CA   CB   CG   CD     0.0000    0.00  180.00    0.00   0.0000
+BUILD CB   CG   CD   OE1    0.0000    0.00  180.00    0.00   0.0000
+BUILD OE1  CG   *CD  OE2    0.0000    0.00  180.00    0.00   0.0000
+
+RESIDUE GLY     0.00000
+ATOM N    NH1    -0.20000     "H    CA   C   "
+ATOM H    H       0.12000     "CA  "
+ATOM CA   CH2E    0.09000     "C    O    +N  "
+ATOM C    C       0.34500     "O    +N   +H   +CA "
+ATOM O    O      -0.35500     "+N  "
+BOND N    CA        
+BOND CA   C         
+BOND C    +N        
+BOND C    O         
+BOND N    H   
+ANGLE -C   N    CA             
+ANGLE N    CA   C              
+ANGLE CA   C    +N  
+ANGLE CA   C    O              
+ANGLE O    C    +N             
+ANGLE -C   N    H   
+ANGLE H    N    CA  
+TORSION -C   N    CA   C         
+TORSION N    CA   C    +N        
+TORSION CA   C    +N   +CA 
+IMPROPER N    -C   CA   H         
+IMPROPER C    CA   +N   O   
+DONOR H    N    -C   CA  
+ACCEPTOR O             
+BUILD -C   CA   *N   H      0.0000    0.00  180.00    0.00   0.0000
+BUILD -C   N    CA   C      0.0000    0.00  180.00    0.00   0.0000
+BUILD N    CA   C    +N     0.0000    0.00  180.00    0.00   0.0000
+BUILD +N   CA   *C   O      0.0000    0.00  180.00    0.00   0.0000
+BUILD CA   C    +N   +CA    0.0000    0.00  180.00    0.00   0.0000
+
+RESIDUE HIS     0.00000
+ATOM N    NH1    -0.20000     "H    CA   CB   C   "
+ATOM H    H       0.12000     "CA  "
+ATOM CA   CH1E    0.07500     "CB   CG   C    O    +N  "
+ATOM CB   CH2E    0.01000     "CG   ND1  CD2  C   "
+ATOM CG   C       0.05000     "ND1  HD1  CD2  CE1  NE2 "
+ATOM ND1  NH1    -0.07800     "HD1  CD2  CE1  NE2 "
+ATOM HD1  H       0.09500     "CE1 "
+ATOM CD2  CR1E   -0.01500     "CE1  NE2 "
+ATOM CE1  CR1E    0.14500     "NE2 "
+ATOM NE2  NR     -0.19000     "    "
+ATOM C    C       0.34800     "O    +N   +H   +CA "
+ATOM O    O      -0.36000     "+N  "
+BOND N    CA        
+BOND CA   C         
+BOND C    +N        
+BOND C    O         
+BOND N    H   
+BOND CA   CB        
+BOND CB   CG        
+BOND CG   ND1       
+BOND CG   CD2       
+BOND ND1  HD1 
+BOND ND1  CE1       
+BOND CD2  NE2       
+BOND CE1  NE2 
+ANGLE -C   N    CA             
+ANGLE N    CA   C              
+ANGLE CA   C    +N  
+ANGLE CA   C    O              
+ANGLE O    C    +N             
+ANGLE -C   N    H   
+ANGLE H    N    CA             
+ANGLE N    CA   CB             
+ANGLE C    CA   CB  
+ANGLE CA   CB   CG             
+ANGLE CB   CG   ND1            
+ANGLE CB   CG   CD2 
+ANGLE ND1  CG   CD2            
+ANGLE CG   ND1  HD1            
+ANGLE CG   ND1  CE1 
+ANGLE HD1  ND1  CE1            
+ANGLE CG   CD2  NE2            
+ANGLE ND1  CE1  NE2 
+ANGLE CD2  NE2  CE1 
+TORSION -C   N    CA   C         
+TORSION N    CA   C    +N        
+TORSION CA   C    +N   +CA 
+TORSION N    CA   CB   CG        
+TORSION CA   CB   CG   ND1 
+IMPROPER N    -C   CA   H         
+IMPROPER C    CA   +N   O         
+IMPROPER CA   N    C    CB  
+IMPROPER CG   ND1  CD2  CB        
+IMPROPER ND1  CG   CE1  HD1       
+IMPROPER CG   ND1  CE1  NE2 
+IMPROPER ND1  CE1  NE2  CD2       
+IMPROPER CE1  NE2  CD2  CG        
+IMPROPER NE2  CD2  CG   ND1 
+IMPROPER CD2  CG   ND1  CE1 
+DONOR H    N    -C   CA  
+DONOR HD1  ND1  CE1  NE2 
+ACCEPTOR NE2           
+ACCEPTOR O             
+BUILD -C   CA   *N   H      0.0000    0.00  180.00    0.00   0.0000
+BUILD -C   N    CA   C      0.0000    0.00  180.00    0.00   0.0000
+BUILD N    CA   C    +N     0.0000    0.00  180.00    0.00   0.0000
+BUILD +N   CA   *C   O      0.0000    0.00  180.00    0.00   0.0000
+BUILD CA   C    +N   +CA    0.0000    0.00  180.00    0.00   0.0000
+BUILD N    C    *CA  CB     0.0000    0.00  120.00    0.00   0.0000
+BUILD C    CA   CB   CG     0.0000    0.00  180.00    0.00   0.0000
+BUILD CA   CB   CG   CD2    0.0000    0.00   90.00    0.00   0.0000
+BUILD CD2  CB   *CG  ND1    0.0000    0.00  180.00    0.00   0.0000
+BUILD CD2  CG   ND1  CE1    0.0000    0.00    0.00    0.00   0.0000
+BUILD ND1  CG   CD2  NE2    0.0000    0.00    0.00    0.00   0.0000
+BUILD CE1  CG   *ND1 HD1    0.0000    0.00  180.00    0.00   0.0000
+
+RESIDUE ILE     0.00000
+ATOM N    NH1    -0.20000     "H    CA   CB   C   "
+ATOM H    H       0.12000     "CA  "
+ATOM CA   CH1E    0.07500     "CB   CG1  CG2  C    O    +N  "
+ATOM CB   CH1E    0.02800     "CG1  CG2  CD   C   "
+ATOM CG1  CH2E    0.01200     "CG2  CD  "
+ATOM CG2  CH3E   -0.01200     "    "
+ATOM CD   CH3E   -0.00800     "    "
+ATOM C    C       0.35000     "O    +N   +H   +CA "
+ATOM O    O      -0.36500     "+N  "
+BOND N    CA        
+BOND CA   C         
+BOND C    +N        
+BOND C    O         
+BOND N    H   
+BOND CA   CB        
+BOND CB   CG1       
+BOND CB   CG2       
+BOND CG1  CD  
+ANGLE -C   N    CA             
+ANGLE N    CA   C              
+ANGLE CA   C    +N  
+ANGLE CA   C    O              
+ANGLE O    C    +N             
+ANGLE -C   N    H   
+ANGLE H    N    CA             
+ANGLE N    CA   CB             
+ANGLE C    CA   CB  
+ANGLE CA   CB   CG1            
+ANGLE CA   CB   CG2            
+ANGLE CG1  CB   CG2 
+ANGLE CB   CG1  CD  
+TORSION -C   N    CA   C         
+TORSION N    CA   C    +N        
+TORSION CA   C    +N   +CA 
+TORSION N    CA   CB   CG1       
+TORSION CA   CB   CG1  CD  
+IMPROPER N    -C   CA   H         
+IMPROPER C    CA   +N   O         
+IMPROPER CA   N    C    CB  
+IMPROPER CB   CG1  CG2  CA  
+DONOR H    N    -C   CA  
+ACCEPTOR O             
+BUILD -C   CA   *N   H      0.0000    0.00  180.00    0.00   0.0000
+BUILD -C   N    CA   C      0.0000    0.00  180.00    0.00   0.0000
+BUILD N    CA   C    +N     0.0000    0.00  180.00    0.00   0.0000
+BUILD +N   CA   *C   O      0.0000    0.00  180.00    0.00   0.0000
+BUILD CA   C    +N   +CA    0.0000    0.00  180.00    0.00   0.0000
+BUILD N    C    *CA  CB     0.0000    0.00  120.00    0.00   0.0000
+BUILD C    CA   CB   CG1    0.0000    0.00  180.00    0.00   0.0000
+BUILD CA   CB   CG1  CD     0.0000    0.00  180.00    0.00   0.0000
+BUILD CG1  CA   *CB  CG2    0.0000    0.00  180.00    0.00   0.0000
+
+RESIDUE LEU     0.00000
+ATOM N    NH1    -0.20000     "H    CA   CB   C   "
+ATOM H    H       0.12000     "CA  "
+ATOM CA   CH1E    0.07500     "CB   CG   C    O    +N  "
+ATOM CB   CH2E    0.01800     "CG   CD1  CD2  C   "
+ATOM CG   CH1E    0.03000     "CD1  CD2 "
+ATOM CD1  CH3E   -0.01400     "CD2 "
+ATOM CD2  CH3E   -0.01400     "    "
+ATOM C    C       0.35000     "O    +N   +H   +CA "
+ATOM O    O      -0.36500     "+N  "
+BOND N    CA        
+BOND CA   C         
+BOND C    +N        
+BOND C    O         
+BOND N    H   
+BOND CA   CB        
+BOND CB   CG        
+BOND CG   CD1       
+BOND CG   CD2 
+ANGLE -C   N    CA             
+ANGLE N    CA   C              
+ANGLE CA   C    +N  
+ANGLE CA   C    O              
+ANGLE O    C    +N             
+ANGLE -C   N    H   
+ANGLE H    N    CA             
+ANGLE N    CA   CB             
+ANGLE C    CA   CB  
+ANGLE CA   CB   CG             
+ANGLE CB   CG   CD1            
+ANGLE CB   CG   CD2 
+ANGLE CD1  CG   CD2 
+TORSION -C   N    CA   C         
+TORSION N    CA   C    +N        
+TORSION CA   C    +N   +CA 
+TORSION N    CA   CB   CG        
+TORSION CA   CB   CG   CD2 
+IMPROPER N    -C   CA   H         
+IMPROPER C    CA   +N   O         
+IMPROPER CA   N    C    CB  
+IMPROPER CG   CD2  CD1  CB  
+DONOR H    N    -C   CA  
+ACCEPTOR O             
+BUILD -C   CA   *N   H      0.0000    0.00  180.00    0.00   0.0000
+BUILD -C   N    CA   C      0.0000    0.00  180.00    0.00   0.0000
+BUILD N    CA   C    +N     0.0000    0.00  180.00    0.00   0.0000
+BUILD +N   CA   *C   O      0.0000    0.00  180.00    0.00   0.0000
+BUILD CA   C    +N   +CA    0.0000    0.00  180.00    0.00   0.0000
+BUILD N    C    *CA  CB     0.0000    0.00  120.00    0.00   0.0000
+BUILD C    CA   CB   CG     0.0000    0.00  180.00    0.00   0.0000
+BUILD CA   CB   CG   CD1    0.0000    0.00  180.00    0.00   0.0000
+BUILD CD1  CB   *CG  CD2    0.0000    0.00  180.00    0.00   0.0000
+
+RESIDUE LYS     1.00000
+ATOM N    NH1    -0.19300     "H    CA   CB   C   "
+ATOM H    H       0.10300     "CA  "
+ATOM CA   CH1E    0.08000     "CB   CG   C    O    +N  "
+ATOM CB   CH2E    0.04000     "CG   CD   C   "
+ATOM CG   CH2E    0.05400     "CD   CE  "
+ATOM CD   CH2E    0.06300     "CE   NZ  "
+ATOM CE   CH2E    0.20500     "NZ   HZ1  HZ2  HZ3 "
+ATOM NZ   NH3    -0.06800     "HZ1  HZ2  HZ3 "
+ATOM HZ1  HC      0.23200     "HZ2  HZ3 "
+ATOM HZ2  HC      0.26400     "HZ3 "
+ATOM HZ3  HC      0.23200     "    "
+ATOM C    C       0.34800     "O    +N   +H   +CA "
+ATOM O    O      -0.36000     "+N  "
+BOND N    CA        
+BOND CA   C         
+BOND C    +N        
+BOND C    O         
+BOND N    H   
+BOND CA   CB        
+BOND CB   CG        
+BOND CG   CD        
+BOND CD   CE        
+BOND CE   NZ  
+BOND NZ   HZ1       
+BOND NZ   HZ2       
+BOND NZ   HZ3 
+ANGLE -C   N    CA             
+ANGLE N    CA   C              
+ANGLE CA   C    +N  
+ANGLE CA   C    O              
+ANGLE O    C    +N             
+ANGLE -C   N    H   
+ANGLE H    N    CA             
+ANGLE N    CA   CB             
+ANGLE C    CA   CB  
+ANGLE CA   CB   CG             
+ANGLE CB   CG   CD             
+ANGLE CG   CD   CE  
+ANGLE CD   CE   NZ             
+ANGLE CE   NZ   HZ1            
+ANGLE CE   NZ   HZ2 
+ANGLE CE   NZ   HZ3            
+ANGLE HZ1  NZ   HZ2            
+ANGLE HZ1  NZ   HZ3 
+ANGLE HZ2  NZ   HZ3 
+TORSION -C   N    CA   C         
+TORSION N    CA   C    +N        
+TORSION CA   C    +N   +CA 
+TORSION N    CA   CB   CG        
+TORSION CA   CB   CG   CD        
+TORSION CB   CG   CD   CE  
+TORSION CG   CD   CE   NZ        
+TORSION CD   CE   NZ   HZ1       
+TORSION CD   CE   NZ   HZ2 
+TORSION CD   CE   NZ   HZ3 
+IMPROPER N    -C   CA   H         
+IMPROPER C    CA   +N   O         
+IMPROPER CA   N    C    CB  
+DONOR H    N    -C   CA  
+DONOR HZ1  NZ   CE   CD  
+DONOR HZ2  NZ   CE   CD  
+DONOR HZ3  NZ   CE   CD  
+ACCEPTOR O             
+BUILD -C   CA   *N   H      0.0000    0.00  180.00    0.00   0.0000
+BUILD -C   N    CA   C      0.0000    0.00  180.00    0.00   0.0000
+BUILD N    CA   C    +N     0.0000    0.00  180.00    0.00   0.0000
+BUILD +N   CA   *C   O      0.0000    0.00  180.00    0.00   0.0000
+BUILD CA   C    +N   +CA    0.0000    0.00  180.00    0.00   0.0000
+BUILD N    C    *CA  CB     0.0000    0.00  120.00    0.00   0.0000
+BUILD C    CA   CB   CG     0.0000    0.00  180.00    0.00   0.0000
+BUILD CA   CB   CG   CD     0.0000    0.00  180.00    0.00   0.0000
+BUILD CB   CG   CD   CE     0.0000    0.00  180.00    0.00   0.0000
+BUILD CG   CD   CE   NZ     0.0000    0.00  180.00    0.00   0.0000
+BUILD CD   CE   NZ   HZ1    0.0000    0.00  180.00    0.00   0.0000
+BUILD HZ1  CE   *NZ  HZ2    0.0000    0.00  120.00    0.00   0.0000
+BUILD HZ2  CE   *NZ  HZ3    0.0000    0.00  120.00    0.00   0.0000
+
+RESIDUE MET     0.00000
+ATOM N    NH1    -0.20000     "H    CA   CB   C   "
+ATOM H    H       0.12000     "CA  "
+ATOM CA   CH1E    0.07500     "CB   CG   C    O    +N  "
+ATOM CB   CH2E    0.04000     "CG   SD   C   "
+ATOM CG   CH2E    0.00400     "SD   CE  "
+ATOM SD   S      -0.17000     "CE  "
+ATOM CE   CH3E    0.14600     "    "
+ATOM C    C       0.35000     "O    +N   +H   +CA "
+ATOM O    O      -0.36500     "+N  "
+BOND N    CA        
+BOND CA   C         
+BOND C    +N        
+BOND C    O         
+BOND N    H   
+BOND CA   CB        
+BOND CB   CG        
+BOND CG   SD        
+BOND SD   CE  
+ANGLE -C   N    CA             
+ANGLE N    CA   C              
+ANGLE CA   C    +N  
+ANGLE CA   C    O              
+ANGLE O    C    +N             
+ANGLE -C   N    H   
+ANGLE H    N    CA             
+ANGLE N    CA   CB             
+ANGLE C    CA   CB  
+ANGLE CA   CB   CG             
+ANGLE CB   CG   SD             
+ANGLE CG   SD   CE  
+TORSION -C   N    CA   C         
+TORSION N    CA   C    +N        
+TORSION CA   C    +N   +CA 
+TORSION N    CA   CB   CG        
+TORSION CA   CB   CG   SD        
+TORSION CB   CG   SD   CE  
+IMPROPER N    -C   CA   H         
+IMPROPER C    CA   +N   O         
+IMPROPER CA   N    C    CB  
+DONOR H    N    -C   CA  
+ACCEPTOR O             
+BUILD -C   CA   *N   H      0.0000    0.00  180.00    0.00   0.0000
+BUILD -C   N    CA   C      0.0000    0.00  180.00    0.00   0.0000
+BUILD N    CA   C    +N     0.0000    0.00  180.00    0.00   0.0000
+BUILD +N   CA   *C   O      0.0000    0.00  180.00    0.00   0.0000
+BUILD CA   C    +N   +CA    0.0000    0.00  180.00    0.00   0.0000
+BUILD N    C    *CA  CB     0.0000    0.00  120.00    0.00   0.0000
+BUILD C    CA   CB   CG     0.0000    0.00  180.00    0.00   0.0000
+BUILD CA   CB   CG   SD     0.0000    0.00  180.00    0.00   0.0000
+BUILD CB   CG   SD   CE     0.0000    0.00  180.00    0.00   0.0000
+
+RESIDUE PHE     0.00000
+ATOM N    NH1    -0.20000     "H    CA   CB   C   "
+ATOM H    H       0.12000     "CA  "
+ATOM CA   CH1E    0.07500     "CB   CG   C    O    +N  "
+ATOM CB   CH2E    0.00500     "CG   CD1  CD2  C   "
+ATOM CG   C       0.03900     "CD1  CD2  CE1  CE2  CZ  "
+ATOM CD1  CR1E   -0.01900     "CD2  CE1  CE2  CZ  "
+ATOM CD2  CR1E   -0.01900     "CE1  CE2  CZ  "
+ATOM CE1  CR1E    0.01000     "CE2  CZ  "
+ATOM CE2  CR1E    0.01000     "CZ  "
+ATOM CZ   CR1E   -0.00600     "    "
+ATOM C    C       0.35000     "O    +N   +H   +CA "
+ATOM O    O      -0.36500     "+N  "
+BOND N    CA        
+BOND CA   C         
+BOND C    +N        
+BOND C    O         
+BOND N    H   
+BOND CA   CB        
+BOND CB   CG        
+BOND CG   CD1       
+BOND CG   CD2       
+BOND CD1  CE1 
+BOND CD2  CE2       
+BOND CE1  CZ        
+BOND CE2  CZ  
+ANGLE -C   N    CA             
+ANGLE N    CA   C              
+ANGLE CA   C    +N  
+ANGLE CA   C    O              
+ANGLE O    C    +N             
+ANGLE -C   N    H   
+ANGLE H    N    CA             
+ANGLE N    CA   CB             
+ANGLE C    CA   CB  
+ANGLE CA   CB   CG             
+ANGLE CB   CG   CD1            
+ANGLE CB   CG   CD2 
+ANGLE CD1  CG   CD2            
+ANGLE CG   CD1  CE1            
+ANGLE CG   CD2  CE2 
+ANGLE CD1  CE1  CZ             
+ANGLE CD2  CE2  CZ             
+ANGLE CE1  CZ   CE2 
+TORSION -C   N    CA   C         
+TORSION N    CA   C    +N        
+TORSION CA   C    +N   +CA 
+TORSION N    CA   CB   CG        
+TORSION CA   CB   CG   CD1 
+IMPROPER N    -C   CA   H         
+IMPROPER C    CA   +N   O         
+IMPROPER CA   N    C    CB  
+IMPROPER CG   CD1  CE1  CZ        
+IMPROPER CD1  CE1  CZ   CE2       
+IMPROPER CE1  CZ   CE2  CD2 
+IMPROPER CZ   CE2  CD2  CG        
+IMPROPER CE2  CD2  CG   CD1       
+IMPROPER CD2  CG   CD1  CE1 
+IMPROPER CG   CD1  CD2  CB  
+DONOR H    N    -C   CA  
+ACCEPTOR O             
+BUILD -C   CA   *N   H      0.0000    0.00  180.00    0.00   0.0000
+BUILD -C   N    CA   C      0.0000    0.00  180.00    0.00   0.0000
+BUILD N    CA   C    +N     0.0000    0.00  180.00    0.00   0.0000
+BUILD +N   CA   *C   O      0.0000    0.00  180.00    0.00   0.0000
+BUILD CA   C    +N   +CA    0.0000    0.00  180.00    0.00   0.0000
+BUILD N    C    *CA  CB     0.0000    0.00  120.00    0.00   0.0000
+BUILD C    CA   CB   CG     0.0000    0.00  180.00    0.00   0.0000
+BUILD CA   CB   CG   CD1    0.0000    0.00   90.00    0.00   0.0000
+BUILD CD1  CB   *CG  CD2    0.0000    0.00  180.00    0.00   0.0000
+BUILD CD1  CG   CD2  CE2    0.0000    0.00    0.00    0.00   0.0000
+BUILD CD2  CG   CD1  CE1    0.0000    0.00    0.00    0.00   0.0000
+BUILD CG   CD1  CE1  CZ     0.0000    0.00    0.00    0.00   0.0000
+
+RESIDUE PRO     0.00000
+ATOM N    N      -0.17600     "CA   CB   CG   CD   C   "
+ATOM CA   CH1E    0.07500     "CB   CG   CD   C    O    +N  "
+ATOM CB   CH2E    0.02900     "CG   CD   C   "
+ATOM CG   CH2E    0.00800     "CD  "
+ATOM CD   CH2E    0.07900     "-C  "
+ATOM C    C       0.35000     "O    +N   +H   +CA "
+ATOM O    O      -0.36500     "+N  "
+BOND N    CA        
+BOND CA   C         
+BOND C    +N        
+BOND C    O         
+BOND N    CD  
+BOND CA   CB        
+BOND CB   CG        
+BOND CG   CD  
+ANGLE -C   N    CA             
+ANGLE N    CA   C              
+ANGLE CA   C    +N  
+ANGLE CA   C    O              
+ANGLE O    C    +N             
+ANGLE -C   N    CD  
+ANGLE CD   N    CA             
+ANGLE N    CA   CB             
+ANGLE C    CA   CB  
+ANGLE CA   CB   CG             
+ANGLE CB   CG   CD             
+ANGLE CG   CD   N   
+TORSION -C   N    CA   C         
+TORSION N    CA   C    +N        
+TORSION CA   C    +N   +CA 
+TORSION N    CA   CB   CG        
+TORSION CA   CB   CG   CD        
+TORSION CB   CG   CD   N   
+TORSION CG   CD   N    CA  
+IMPROPER N    CA   CD   -C        
+IMPROPER C    CA   +N   O         
+IMPROPER CA   N    C    CB  
+ACCEPTOR O             
+BUILD -C   CA   *N   CD     0.0000    0.00  180.00    0.00   0.0000
+BUILD -C   N    CA   C      0.0000    0.00  180.00    0.00   0.0000
+BUILD N    CA   C    +N     0.0000    0.00  180.00    0.00   0.0000
+BUILD +N   CA   *C   O      0.0000    0.00  180.00    0.00   0.0000
+BUILD CA   C    +N   +CA    0.0000    0.00  180.00    0.00   0.0000
+BUILD N    C    *CA  CB     0.0000    0.00  120.00    0.00   0.0000
+BUILD C    CA   CB   CG     0.0000    0.00  180.00    0.00   0.0000
+
+RESIDUE SER     0.00000
+ATOM N    NH1    -0.20000     "H    CA   CB   C   "
+ATOM H    H       0.12000     "CA  "
+ATOM CA   CH1E    0.06000     "CB   OG   C    O    +N  "
+ATOM CB   CH2E    0.13000     "OG   HG   C   "
+ATOM OG   OH1    -0.24200     "HG  "
+ATOM HG   H       0.13500     "    "
+ATOM C    C       0.36000     "O    +N   +H   +CA "
+ATOM O    O      -0.36300     "+N  "
+BOND N    CA        
+BOND CA   C         
+BOND C    +N        
+BOND C    O         
+BOND N    H   
+BOND CA   CB        
+BOND CB   OG        
+BOND OG   HG  
+ANGLE -C   N    CA             
+ANGLE N    CA   C              
+ANGLE CA   C    +N  
+ANGLE CA   C    O              
+ANGLE O    C    +N             
+ANGLE -C   N    H   
+ANGLE H    N    CA             
+ANGLE N    CA   CB             
+ANGLE C    CA   CB  
+ANGLE CA   CB   OG             
+ANGLE CB   OG   HG  
+TORSION -C   N    CA   C         
+TORSION N    CA   C    +N        
+TORSION CA   C    +N   +CA 
+TORSION N    CA   CB   OG        
+TORSION CA   CB   OG   HG  
+IMPROPER N    -C   CA   H         
+IMPROPER C    CA   +N   O         
+IMPROPER CA   N    C    CB  
+DONOR H    N    -C   CA  
+DONOR HG   OG   CB   CA  
+ACCEPTOR OG            
+ACCEPTOR O             
+BUILD -C   CA   *N   H      0.0000    0.00  180.00    0.00   0.0000
+BUILD -C   N    CA   C      0.0000    0.00  180.00    0.00   0.0000
+BUILD N    CA   C    +N     0.0000    0.00  180.00    0.00   0.0000
+BUILD +N   CA   *C   O      0.0000    0.00  180.00    0.00   0.0000
+BUILD CA   C    +N   +CA    0.0000    0.00  180.00    0.00   0.0000
+BUILD N    C    *CA  CB     0.0000    0.00  120.00    0.00   0.0000
+BUILD C    CA   CB   OG     0.0000    0.00  180.00    0.00   0.0000
+BUILD CA   CB   OG   HG     0.0000    0.00  180.00    0.00   0.0000
+
+RESIDUE THR     0.00000
+ATOM N    NH1    -0.20000     "H    CA   CB   C   "
+ATOM H    H       0.12000     "CA  "
+ATOM CA   CH1E    0.06000     "CB   OG1  CG2  C    O    +N  "
+ATOM CB   CH1E    0.14000     "OG1  HG1  CG2  C   "
+ATOM OG1  OH1    -0.26000     "HG1  CG2 "
+ATOM HG1  H       0.13000     "    "
+ATOM CG2  CH3E    0.01300     "    "
+ATOM C    C       0.36000     "O    +N   +H   +CA "
+ATOM O    O      -0.36300     "+N  "
+BOND N    CA        
+BOND CA   C         
+BOND C    +N        
+BOND C    O         
+BOND N    H   
+BOND CA   CB        
+BOND CB   OG1       
+BOND CB   CG2       
+BOND OG1  HG1 
+ANGLE -C   N    CA             
+ANGLE N    CA   C              
+ANGLE CA   C    +N  
+ANGLE CA   C    O              
+ANGLE O    C    +N             
+ANGLE -C   N    H   
+ANGLE H    N    CA             
+ANGLE N    CA   CB             
+ANGLE C    CA   CB  
+ANGLE CA   CB   OG1            
+ANGLE CA   CB   CG2            
+ANGLE OG1  CB   CG2 
+ANGLE CB   OG1  HG1 
+TORSION -C   N    CA   C         
+TORSION N    CA   C    +N        
+TORSION CA   C    +N   +CA 
+TORSION N    CA   CB   OG1       
+TORSION CA   CB   OG1  HG1 
+IMPROPER N    -C   CA   H         
+IMPROPER C    CA   +N   O         
+IMPROPER CA   N    C    CB  
+IMPROPER CB   OG1  CG2  CA  
+DONOR H    N    -C   CA  
+DONOR HG1  OG1  CB   CA  
+ACCEPTOR OG1           
+ACCEPTOR O             
+BUILD -C   CA   *N   H      0.0000    0.00  180.00    0.00   0.0000
+BUILD -C   N    CA   C      0.0000    0.00  180.00    0.00   0.0000
+BUILD N    CA   C    +N     0.0000    0.00  180.00    0.00   0.0000
+BUILD +N   CA   *C   O      0.0000    0.00  180.00    0.00   0.0000
+BUILD CA   C    +N   +CA    0.0000    0.00  180.00    0.00   0.0000
+BUILD N    C    *CA  CB     0.0000    0.00  120.00    0.00   0.0000
+BUILD C    CA   CB   OG1    0.0000    0.00  180.00    0.00   0.0000
+BUILD OG1  CA   *CB  CG2    0.0000    0.00  180.00    0.00   0.0000
+BUILD CA   CB   OG1  HG1    0.0000    0.00  180.00    0.00   0.0000
+
+RESIDUE TRP     0.00000
+ATOM N    NH1    -0.20000     "H    CA   CB   C   "
+ATOM H    H       0.12000     "CA  "
+ATOM CA   CH1E    0.07500     "CB   CG   C    O    +N  "
+ATOM CB   CH2E    0.01000     "CG   CD1  CD2  C   "
+ATOM CG   C      -0.01800     "CD1  CD2  NE1  CE2  CE3  CZ2  CZ3  CH2 "
+ATOM CD1  CR1E    0.02100     "CD2  NE1  HE1  CE2  CE3  CZ2  CZ3  CH2 "
+ATOM CD2  C      -0.02300     "NE1  CE2  CE3  CZ2  CZ3  CH2 "
+ATOM NE1  NH1    -0.12500     "HE1  CE2  CE3  CZ2  CZ3  CH2 "
+ATOM HE1  H       0.10900     "CE2 "
+ATOM CE2  C       0.14000     "CE3  CZ2  CZ3  CH2 "
+ATOM CE3  CR1E   -0.00300     "CZ2  CZ3  CH2 "
+ATOM CZ2  CR1E   -0.07200     "CZ3  CH2 "
+ATOM CZ3  CR1E   -0.03500     "CH2 "
+ATOM CH2  CR1E    0.01600     "    "
+ATOM C    C       0.35000     "O    +N   +H   +CA "
+ATOM O    O      -0.36500     "+N  "
+BOND N    CA        
+BOND CA   C         
+BOND C    +N        
+BOND C    O         
+BOND N    H   
+BOND CA   CB        
+BOND CB   CG        
+BOND CG   CD1       
+BOND CG   CD2       
+BOND CD1  NE1 
+BOND CD2  CE2       
+BOND NE1  HE1       
+BOND NE1  CE2       
+BOND CD2  CE3       
+BOND CE2  CZ2 
+BOND CE3  CZ3       
+BOND CZ2  CH2       
+BOND CZ3  CH2 
+ANGLE -C   N    CA             
+ANGLE N    CA   C              
+ANGLE CA   C    +N  
+ANGLE CA   C    O              
+ANGLE O    C    +N             
+ANGLE -C   N    H   
+ANGLE H    N    CA             
+ANGLE N    CA   CB             
+ANGLE C    CA   CB  
+ANGLE CA   CB   CG             
+ANGLE CB   CG   CD1            
+ANGLE CB   CG   CD2 
+ANGLE CD1  CG   CD2            
+ANGLE CG   CD1  NE1            
+ANGLE CG   CD2  CE2 
+ANGLE CD1  NE1  CE2            
+ANGLE CD1  NE1  HE1            
+ANGLE HE1  NE1  CE2 
+ANGLE CD2  CE2  NE1            
+ANGLE CG   CD2  CE3            
+ANGLE NE1  CE2  CZ2 
+ANGLE CE2  CD2  CE3            
+ANGLE CD2  CE2  CZ2            
+ANGLE CD2  CE3  CZ3 
+ANGLE CE2  CZ2  CH2            
+ANGLE CE3  CZ3  CH2            
+ANGLE CZ2  CH2  CZ3 
+TORSION -C   N    CA   C         
+TORSION N    CA   C    +N        
+TORSION CA   C    +N   +CA 
+TORSION N    CA   CB   CG        
+TORSION CA   CB   CG   CD1       
+TORSION CD1  CD2  CE2  CH2 
+TORSION CD1  CE2  CD2  CZ3       
+TORSION CZ2  CE2  CD2  CG        
+TORSION CE3  CD2  CE2  NE1 
+IMPROPER N    -C   CA   H         
+IMPROPER C    CA   +N   O         
+IMPROPER CA   N    C    CB  
+IMPROPER CG   CD1  CD2  CB        
+IMPROPER NE1  CD1  CE2  HE1       
+IMPROPER CD2  CE2  CZ2  CH2 
+IMPROPER CE2  CZ2  CH2  CZ3       
+IMPROPER CZ2  CH2  CZ3  CE3       
+IMPROPER CH2  CZ3  CE3  CD2 
+IMPROPER CZ3  CE3  CD2  CE2       
+IMPROPER CE3  CD2  CE2  CZ2       
+IMPROPER CG   CD1  NE1  CE2 
+IMPROPER CD1  NE1  CE2  CD2       
+IMPROPER NE1  CE2  CD2  CG        
+IMPROPER CE2  CD2  CG   CD1 
+IMPROPER CD2  CG   CD1  NE1 
+DONOR H    N    -C   CA  
+DONOR HE1  NE1  CE2  CD2 
+ACCEPTOR O             
+BUILD -C   CA   *N   H      0.0000    0.00  180.00    0.00   0.0000
+BUILD -C   N    CA   C      0.0000    0.00  180.00    0.00   0.0000
+BUILD N    CA   C    +N     0.0000    0.00  180.00    0.00   0.0000
+BUILD +N   CA   *C   O      0.0000    0.00  180.00    0.00   0.0000
+BUILD CA   C    +N   +CA    0.0000    0.00  180.00    0.00   0.0000
+BUILD N    C    *CA  CB     0.0000    0.00  120.00    0.00   0.0000
+BUILD C    CA   CB   CG     0.0000    0.00  180.00    0.00   0.0000
+BUILD CA   CB   CG   CD2    0.0000    0.00  180.00    0.00   0.0000
+BUILD CD2  CB   *CG  CD1    0.0000    0.00  180.00    0.00   0.0000
+BUILD CD1  CG   CD2  CE2    0.0000    0.00    0.00    0.00   0.0000
+BUILD CD2  CG   CD1  NE1    0.0000    0.00    0.00    0.00   0.0000
+BUILD CE2  CD1  *NE1 HE1    0.0000    0.00  180.00    0.00   0.0000
+BUILD CE2  CG   *CD2 CE3    0.0000    0.00  180.00    0.00   0.0000
+BUILD CE2  CD2  CE3  CZ3    0.0000    0.00    0.00    0.00   0.0000
+BUILD CE3  CD2  CE2  CZ2    0.0000    0.00    0.00    0.00   0.0000
+BUILD CD2  CE2  CZ2  CH2    0.0000    0.00    0.00    0.00   0.0000
+
+RESIDUE TYR     0.00000
+ATOM N    NH1    -0.20500     "H    CA   CB   C   "
+ATOM H    H       0.12000     "CA  "
+ATOM CA   CH1E    0.07500     "CB   CG   C    O    +N  "
+ATOM CB   CH2E    0.00600     "CG   CD1  CD2  C   "
+ATOM CG   C       0.02400     "CD1  CD2  CE1  CE2  CZ  "
+ATOM CD1  CR1E    0.00200     "CD2  CE1  CE2  CZ  "
+ATOM CD2  CR1E    0.00200     "CE1  CE2  CZ  "
+ATOM CE1  CR1E   -0.02500     "CE2  CZ   OH  "
+ATOM CE2  CR1E   -0.02500     "CZ   OH  "
+ATOM CZ   C       0.16200     "OH   HH  "
+ATOM OH   OH1    -0.26000     "HH  "
+ATOM HH   H       0.14000     "    "
+ATOM C    C       0.35200     "O    +N   +H   +CA "
+ATOM O    O      -0.36800     "+N  "
+BOND N    CA        
+BOND CA   C         
+BOND C    +N        
+BOND C    O         
+BOND N    H   
+BOND CA   CB        
+BOND CB   CG        
+BOND CG   CD1       
+BOND CG   CD2       
+BOND CD1  CE1 
+BOND CD2  CE2       
+BOND CE1  CZ        
+BOND CE2  CZ        
+BOND CZ   OH        
+BOND OH   HH  
+ANGLE -C   N    CA             
+ANGLE N    CA   C              
+ANGLE CA   C    +N  
+ANGLE CA   C    O              
+ANGLE O    C    +N             
+ANGLE -C   N    H   
+ANGLE H    N    CA             
+ANGLE N    CA   CB             
+ANGLE C    CA   CB  
+ANGLE CA   CB   CG             
+ANGLE CB   CG   CD1            
+ANGLE CB   CG   CD2 
+ANGLE CD1  CG   CD2            
+ANGLE CG   CD1  CE1            
+ANGLE CG   CD2  CE2 
+ANGLE CD1  CE1  CZ             
+ANGLE CD2  CE2  CZ             
+ANGLE CE1  CZ   CE2 
+ANGLE CE1  CZ   OH             
+ANGLE CE2  CZ   OH             
+ANGLE CZ   OH   HH  
+TORSION -C   N    CA   C         
+TORSION N    CA   C    +N        
+TORSION CA   C    +N   +CA 
+TORSION N    CA   CB   CG        
+TORSION CA   CB   CG   CD1       
+TORSION CE2  CZ   OH   HH  
+IMPROPER N    -C   CA   H         
+IMPROPER C    CA   +N   O         
+IMPROPER CA   N    C    CB  
+IMPROPER CG   CD1  CD2  CB        
+IMPROPER CZ   CE1  CE2  OH        
+IMPROPER CG   CD1  CE1  CZ  
+IMPROPER CD1  CE1  CZ   CE2       
+IMPROPER CE1  CZ   CE2  CD2       
+IMPROPER CZ   CE2  CD2  CG  
+IMPROPER CE2  CD2  CG   CD1       
+IMPROPER CD2  CG   CD1  CE1 
+DONOR H    N    -C   CA  
+DONOR HH   OH   CZ   CE2 
+ACCEPTOR OH            
+ACCEPTOR O             
+BUILD -C   CA   *N   H      0.0000    0.00  180.00    0.00   0.0000
+BUILD -C   N    CA   C      0.0000    0.00  180.00    0.00   0.0000
+BUILD N    CA   C    +N     0.0000    0.00  180.00    0.00   0.0000
+BUILD +N   CA   *C   O      0.0000    0.00  180.00    0.00   0.0000
+BUILD CA   C    +N   +CA    0.0000    0.00  180.00    0.00   0.0000
+BUILD N    C    *CA  CB     0.0000    0.00  120.00    0.00   0.0000
+BUILD C    CA   CB   CG     0.0000    0.00  180.00    0.00   0.0000
+BUILD CA   CB   CG   CD1    0.0000    0.00   90.00    0.00   0.0000
+BUILD CD1  CB   *CG  CD2    0.0000    0.00  180.00    0.00   0.0000
+BUILD CD2  CG   CD1  CE1    0.0000    0.00    0.00    0.00   0.0000
+BUILD CD1  CG   CD2  CE2    0.0000    0.00    0.00    0.00   0.0000
+BUILD CG   CD1  CE1  CZ     0.0000    0.00    0.00    0.00   0.0000
+BUILD CE2  CE1  *CZ  OH     0.0000    0.00  180.00    0.00   0.0000
+BUILD CE1  CZ   OH   HH     0.0000    0.00  180.00    0.00   0.0000
+
+RESIDUE VAL     0.00000
+ATOM N    NH1    -0.20000     "H    CA   CB   C   "
+ATOM H    H       0.12000     "CA  "
+ATOM CA   CH1E    0.07500     "CB   CG1  CG2  C    O    +N  "
+ATOM CB   CH1E    0.06200     "CG1  CG2  C   "
+ATOM CG1  CH3E   -0.02100     "CG2 "
+ATOM CG2  CH3E   -0.02100     "    "
+ATOM C    C       0.35000     "O    +N   +H   +CA "
+ATOM O    O      -0.36500     "+N  "
+BOND N    CA        
+BOND CA   C         
+BOND C    +N        
+BOND C    O         
+BOND N    H   
+BOND CA   CB        
+BOND CB   CG1       
+BOND CB   CG2 
+ANGLE -C   N    CA             
+ANGLE N    CA   C              
+ANGLE CA   C    +N  
+ANGLE CA   C    O              
+ANGLE O    C    +N             
+ANGLE -C   N    H   
+ANGLE H    N    CA             
+ANGLE N    CA   CB             
+ANGLE C    CA   CB  
+ANGLE CA   CB   CG1            
+ANGLE CA   CB   CG2            
+ANGLE CG1  CB   CG2 
+TORSION -C   N    CA   C         
+TORSION N    CA   C    +N        
+TORSION CA   C    +N   +CA 
+TORSION N    CA   CB   CG1 
+IMPROPER N    -C   CA   H         
+IMPROPER C    CA   +N   O         
+IMPROPER CA   N    C    CB  
+IMPROPER CB   CG2  CG1  CA  
+DONOR H    N    -C   CA  
+ACCEPTOR O             
+BUILD -C   CA   *N   H      0.0000    0.00  180.00    0.00   0.0000
+BUILD -C   N    CA   C      0.0000    0.00  180.00    0.00   0.0000
+BUILD N    CA   C    +N     0.0000    0.00  180.00    0.00   0.0000
+BUILD +N   CA   *C   O      0.0000    0.00  180.00    0.00   0.0000
+BUILD CA   C    +N   +CA    0.0000    0.00  180.00    0.00   0.0000
+BUILD N    C    *CA  CB     0.0000    0.00  120.00    0.00   0.0000
+BUILD C    CA   CB   CG1    0.0000    0.00  180.00    0.00   0.0000
+BUILD CG1  CA   *CB  CG2    0.0000    0.00  180.00    0.00   0.0000
+
+RESIDUE NTER    0.44900
+ATOM HT1  HC      0.22450     "HT2  +N   +HT3 +CA "
+ATOM HT2  HC      0.22450     "+N   +HT3 +CA "
+BOND HT1  +N        
+BOND HT2  +N  
+ANGLE HT1  +N   HT2            
+ANGLE HT2  +N   +HT3 
+ANGLE HT2  +N   +CA 
+TORSION HT2  +N   +CA  HT1       
+TORSION +HT3 +N   +CA  HT1 
+DONOR HT1 +N +CA +C
+DONOR HT2 +N +CA +C
+DONOR +HT3 +N +CA +C
+BUILD HT2  +CA  *+NT HT1    0.0000    0.00  120.00    0.00   0.0000
+BUILD +HT3 +CA  *+NT HT2    0.0000    0.00  120.00    0.00   0.0000
+
+RESIDUE CTER   -0.56000
+ATOM OT2  OC     -0.56000    "-C   -OT1 "
+ACCEPTOR OT2           
+
+RESIDUE HSD     0.00000
+ATOM N    NH1    -0.20000     "H    CA   CB   C   "
+ATOM H    H       0.12000     "CA  "
+ATOM CA   CH1E    0.07500     "CB   CG   C    O    +N  "
+ATOM CB   CH2E    0.01000     "CG   ND1  CD2  C   "
+ATOM CG   C       0.05900     "ND1  CD2  CE1  NE2 "
+ATOM ND1  NR     -0.23200     "CD2  CE1  NE2 "
+ATOM CD2  CR1E   -0.01500     "CE1  NE2  HE2 "
+ATOM CE1  CR1E    0.14500     "NE2  HE2 "
+ATOM NE2  NH1    -0.15000     "HE2 "
+ATOM HE2  H       0.20000     "    "
+ATOM C    C       0.34800     "O    +N   +H   +CA "
+ATOM O    O      -0.36000     "+N  "
+BOND N    CA        
+BOND CA   C         
+BOND C    +N        
+BOND C    O         
+BOND N    H   
+BOND CA   CB        
+BOND CB   CG        
+BOND CG   ND1       
+BOND CG   CD2       
+BOND ND1  CE1 
+BOND CD2  NE2       
+BOND CE1  NE2       
+BOND NE2  HE2 
+ANGLE -C   N    CA             
+ANGLE N    CA   C              
+ANGLE CA   C    +N  
+ANGLE CA   C    O              
+ANGLE O    C    +N             
+ANGLE -C   N    H   
+ANGLE H    N    CA             
+ANGLE N    CA   CB             
+ANGLE C    CA   CB  
+ANGLE CA   CB   CG             
+ANGLE CB   CG   ND1            
+ANGLE CB   CG   CD2 
+ANGLE ND1  CG   CD2            
+ANGLE CG   ND1  CE1            
+ANGLE CG   CD2  NE2 
+ANGLE ND1  CE1  NE2            
+ANGLE CD2  NE2  CE1            
+ANGLE CE1  NE2  HE2 
+ANGLE CD2  NE2  HE2 
+TORSION -C   N    CA   C         
+TORSION N    CA   C    +N        
+TORSION CA   C    +N   +CA 
+TORSION N    CA   CB   CG        
+TORSION CA   CB   CG   ND1 
+IMPROPER N    -C   CA   H         
+IMPROPER C    CA   +N   O         
+IMPROPER CA   N    C    CB  
+IMPROPER CG   ND1  CD2  CB        
+IMPROPER NE2  CE1  CD2  HE2       
+IMPROPER CG   ND1  CE1  NE2 
+IMPROPER ND1  CE1  NE2  CD2       
+IMPROPER CE1  NE2  CD2  CG        
+IMPROPER NE2  CD2  CG   ND1 
+IMPROPER CD2  CG   ND1  CE1 
+DONOR H    N    -C   CA  
+DONOR HE2  NE2  CE1  ND1 
+ACCEPTOR ND1           
+ACCEPTOR O             
+BUILD -C   CA   *N   H      0.0000    0.00  180.00    0.00   0.0000
+BUILD -C   N    CA   C      0.0000    0.00  180.00    0.00   0.0000
+BUILD N    CA   C    +N     0.0000    0.00  180.00    0.00   0.0000
+BUILD +N   CA   *C   O      0.0000    0.00  180.00    0.00   0.0000
+BUILD CA   C    +N   +CA    0.0000    0.00  180.00    0.00   0.0000
+BUILD N    C    *CA  CB     0.0000    0.00  120.00    0.00   0.0000
+BUILD C    CA   CB   CG     0.0000    0.00  180.00    0.00   0.0000
+BUILD CA   CB   CG   CD2    0.0000    0.00   90.00    0.00   0.0000
+BUILD CD2  CB   *CG  ND1    0.0000    0.00  180.00    0.00   0.0000
+BUILD CD2  CG   ND1  CE1    0.0000    0.00    0.00    0.00   0.0000
+BUILD ND1  CG   CD2  NE2    0.0000    0.00    0.00    0.00   0.0000
+BUILD CE1  ND2  *NE2 HE2    0.0000    0.00  180.00    0.00   0.0000

@@ -1,0 +1,73 @@
+; VARIOUS PREPROCESSING OPTIONS = 
+title                    = 
+include                  = 
+define                   = 
+
+; RUN CONTROL PARAMETERS = 
+integrator               = steep
+; start time and timestep in ps = 
+tinit                    = 0
+dt                       = 0.002
+nsteps                   = 250
+; groups for center of mass motion removal - default is whole system =
+comm-grps                = 
+
+
+; ENERGY MINIMIZATION OPTIONS = 
+; Force tolerance and initial step-size = 
+emtol                    = 100
+emstep                   = 0.01
+; Max number of iterations in relax_shells = 
+niter                    = 0
+; Frequency of steepest descents steps when doing CG = 
+nstcgsteep               = 1000
+
+; OUTPUT CONTROL OPTIONS = 
+; Output frequency for coords (x), velocities (v) and forces (f) = 
+nstxout                  = 2
+nstvout                  = 2
+nstfout                  = 0
+; Output frequency for energies to log file and energy file = 
+nstlog                   = 1
+nstenergy                = 100
+; Output frequency and precision for xtc file = 
+nstxout-compressed       = 2
+compressed-x-precision   = 500
+; This selects the subset of atoms for the xtc file. You can = 
+; select multiple groups. By default all atoms will be written. = 
+xtc-grps                 = 
+
+; NEIGHBORSEARCHING PARAMETERS = 
+; nblist update frequency = 
+nstlist                  = 10
+; ns algorithm (simple or grid) = 
+ns-type                  = Grid
+; Periodic boundary conditions: xyz or no = 
+pbc                      = xyz
+; nblist cut-off         = 
+rlist                    = 1.0
+
+; OPTIONS FOR ELECTROSTATICS AND VDW = 
+; Method for doing electrostatics = 
+coulombtype              = PME
+rcoulomb-switch          = 0
+rcoulomb                 = 1.0
+; Dielectric constant (DC) for cut-off or DC of reaction field = 
+epsilon-r                = 1
+; Method for doing Van der Waals = 
+vdw-type                 = Cut-off
+; cut-off lengths        = 
+rvdw-switch              = 0
+rvdw                     = 1.0
+; Apply long range dispersion corrections for Energy and Pressure = 
+DispCorr                 = No
+; Spacing for the PME/PPPM FFT grid = 
+fourierspacing           = 0.12
+; FFT grid size, when a value is 0 fourierspacing will be used = 
+fourier_nx               = 0
+fourier_ny               = 0
+fourier_nz               = 0
+; EWALD/PME/PPPM parameters = 
+pme_order                = 4
+ewald_rtol               = 1e-05
+epsilon_surface          = 0

@@ -1,0 +1,645 @@
+! PARAMS.DAT ACRM 22.08.94
+! Energy calculation parameters file
+! Based loosely on the CHARMM param19 file as modified for OML
+!
+! Note that in the torsion and improper sections, the specific atom examples
+! must come before the wild card examples.
+! 13.10.94  Added RESIDUE parameters using CBs
+
+BOND C    C      450.0       1.38
+BOND C    CH1E   405.0       1.52
+BOND C    CH2E   405.0       1.52
+BOND C    CH3E   405.0       1.52
+BOND C    CR1E   450.0       1.38
+BOND C    CT     405.0       1.53
+BOND C    N      471.0       1.33
+BOND C    NC2    400.0       1.33
+BOND C    NC2E   400.0       1.33
+BOND C    NH1    471.0       1.33
+BOND C    NH1E   471.0       1.33
+BOND C    NH2    471.0       1.33
+BOND C    NH2E   471.0       1.33
+BOND C    NP     471.0       1.33
+BOND C    NR     471.0       1.33
+BOND C    O      580.0       1.23
+BOND C    OC     580.0       1.23
+BOND C    OH1    450.0       1.38
+BOND C    OH1E   450.0       1.38
+BOND CH1E CH1E   225.0       1.53
+BOND CH1E CH2E   225.0       1.52
+BOND CH1E CH3E   225.0       1.52
+BOND CH1E N      422.0       1.45
+BOND CH1E NH1    422.0       1.45
+BOND CH1E NH1E   422.0       1.45
+BOND CH1E NH2    422.0       1.45
+BOND CH1E NH2E   422.0       1.45
+BOND CH1E NH3    422.0       1.45
+BOND CH1E NH3E   422.0       1.45
+BOND CH1E OH1    400.0       1.42
+BOND CH1E OH1E   400.0       1.42
+BOND CH2E CH2E   225.0       1.52
+BOND CH2E CH3E   225.0       1.54
+BOND CH2E CR1E   250.0       1.45
+BOND CH2E N      422.0       1.45
+BOND CH2E NH1    422.0       1.45
+BOND CH2E NH1E   422.0       1.45
+BOND CH2E NH2    422.0       1.45
+BOND CH2E NH2E   422.0       1.45
+BOND CH2E NH3    422.0       1.45
+BOND CH2E NH3E   422.0       1.45
+BOND CH2E OH1    400.0       1.42
+BOND CH2E OH1E   400.0       1.42
+BOND CH2E S      450.0       1.81
+BOND CH2E SH1E   450.0       1.81
+BOND CH3E NH1    422.0       1.49
+BOND CH3E NH1E   422.0       1.49
+BOND CH3E S      450.0       1.77
+BOND CM   OM    1115.0       1.128
+BOND CR1E CR1E   450.0       1.38
+BOND CR1E NH1    450.0       1.305
+BOND CR1E NH1E   450.0       1.305
+BOND CR1E NR     450.0       1.305
+BOND CT   CT     200.0       1.53
+BOND CT   N      422.0       1.45
+BOND CT   NC2    422.0       1.45
+BOND CT   NH1    422.0       1.45
+BOND CT   NH2    422.0       1.45
+BOND CT   NH3    422.0       1.45
+BOND CT   OH1    400.0       1.42
+BOND CT   S      450.0       1.81
+BOND FE   CM     258.0       1.79
+BOND FE   NP     500.0       2.09
+BOND FE   NR      65.0       1.98
+BOND FE   OM     250.0       1.8
+BOND H    NH1    405.0       0.98
+BOND H    NH2    405.0       0.98
+BOND H    OH1    450.0       0.96
+BOND H    OH2    450.0       0.96
+BOND HA   C      350.0       1.08
+BOND HA   CT     300.0       1.08
+BOND HC   NC2    405.0       1.00
+BOND HC   NH1    405.0       0.98
+BOND HC   NH3    405.0       1.04
+BOND OC   S      400.0       1.43
+BOND OM   OM     600.0       1.23
+BOND S    S      500.0       2.02
+
+ANGLE C    C    C       70.0     106.5
+ANGLE C    C    CH2E    65.0     126.5
+ANGLE C    C    CH3E    65.0     126.5
+ANGLE C    C    CR1E    70.0     122.5
+ANGLE C    C    CT      70.0     126.5
+ANGLE C    C    HA      40.0     120.0
+ANGLE C    C    NH1     65.0     109.0
+ANGLE C    C    NH1E    65.0     109.0
+ANGLE C    C    NP      65.0     112.5
+ANGLE C    C    NR      65.0     112.5
+ANGLE C    C    OH1     65.0     119.0
+ANGLE C    CH1E CH1E    70.0     110.0
+ANGLE C    CH1E CH2E    70.0     109.5
+ANGLE C    CH1E CH3E    70.0     106.5
+ANGLE C    CH1E N       45.0     111.6
+ANGLE C    CH1E NH1     45.0     111.6
+ANGLE C    CH1E NH1E    45.0     111.6
+ANGLE C    CH1E NH2     45.0     111.6
+ANGLE C    CH1E NH2E    45.0     111.6
+ANGLE C    CH1E NH3     45.0     111.6
+ANGLE C    CH1E NH3E    45.0     111.6
+ANGLE C    CH2E CH1E    70.0     112.5
+ANGLE C    CH2E CH2E    70.0     113.0
+ANGLE C    CH2E NH1     70.0     111.6
+ANGLE C    CH2E NH1E    70.0     111.6
+ANGLE C    CH2E NH2     70.0     111.6
+ANGLE C    CH2E NH2E    70.0     111.6
+ANGLE C    CH2E NH3     70.0     111.6
+ANGLE C    CH2E NH3     70.0     111.6
+ANGLE C    CH2E NH3E    70.0     111.6
+ANGLE C    CR1E C       90.0     126.5
+ANGLE C    CR1E CH2E    90.0     122.0
+ANGLE C    CR1E CR1E    90.0     119.0
+ANGLE C    CR1E NH1     90.0     109.5
+ANGLE C    CR1E NH1E    90.0     109.5
+ANGLE C    CR1E NR      90.0     106.5
+ANGLE C    CT   CT      70.0     109.5
+ANGLE C    CT   HA      70.0     109.5
+ANGLE C    CT   N       70.0     111.6
+ANGLE C    CT   NH1     70.0     111.6
+ANGLE C    CT   NH2     70.0     111.6
+ANGLE C    CT   NH3     70.0     111.6
+ANGLE C    N    CH1E    80.0     120.0
+ANGLE C    N    CH2E    80.0     120.0
+ANGLE C    N    CT      80.0     120.0
+ANGLE C    NC2  CT      80.0     120.0
+ANGLE C    NC2  HC      35.0     120.0
+ANGLE C    NH1  C       60.0     102.5
+ANGLE C    NH1  CH1E    77.5     120.0
+ANGLE C    NH1  CH2E    77.5     120.0
+ANGLE C    NH1  CH3E    77.5     120.0
+ANGLE C    NH1  CR1E    60.0     108.0
+ANGLE C    NH1  CT      80.0     120.0
+ANGLE C    NH1  H       30.0     120.0
+ANGLE C    NH1E CH1E    77.5     120.0
+ANGLE C    NH1E CH2E    77.5     120.0
+ANGLE C    NH1E CH3E    77.5     120.0
+ANGLE C    NH1E CR1E    60.0     108.0
+ANGLE C    NH2  H       30.0     120.0
+ANGLE C    NP   C       70.0     102.5
+ANGLE C    NP   FE      50.0     128.0
+ANGLE C    NR   C       70.0     102.5
+ANGLE C    NR   CR1E    70.0     109.5
+ANGLE C    OH1  H       50.0     109.5
+ANGLE CH1E C    N       20.0     117.5
+ANGLE CH1E C    NH1     20.0     117.5
+ANGLE CH1E C    NH2     20.0     117.5
+ANGLE CH1E C    NH1E    20.0     117.5
+ANGLE CH1E C    O       85.0     121.5
+ANGLE CH1E C    OC      85.0     117.5
+ANGLE CH1E C    OH1     85.0     120.0
+ANGLE CH1E C    OH1E    85.0     120.0
+ANGLE CH1E CH1E CH2E    45.0     112.5
+ANGLE CH1E CH1E CH3E    45.0     111.0
+ANGLE CH1E CH1E NH1     50.0     110.0
+ANGLE CH1E CH1E NH1E    50.0     110.0
+ANGLE CH1E CH1E NH2     50.0     109.5
+ANGLE CH1E CH1E NH2E    50.0     109.5
+ANGLE CH1E CH1E NH3     50.0     107.5
+ANGLE CH1E CH1E NH3E    50.0     107.5
+ANGLE CH1E CH1E OH1     50.0     104.5
+ANGLE CH1E CH1E OH1E    50.0     104.5
+ANGLE CH1E CH2E CH1E    45.0     117.0
+ANGLE CH1E CH2E CH2E    45.0     112.5
+ANGLE CH1E CH2E CH3E    45.0     113.0
+ANGLE CH1E CH2E OH1     45.0     111.0
+ANGLE CH3E CH2E OH1     45.0     111.0
+ANGLE CH1E CH2E OH1E    45.0     111.0
+ANGLE CH3E CH2E OH1E    45.0     111.0
+ANGLE CH1E CH2E S       50.0     112.5
+ANGLE CH1E CH2E SH1E    50.0     112.5
+ANGLE CH1E N    CH2E    60.0     110.0
+ANGLE CH1E N    CH3E    60.0     110.0
+ANGLE CH1E NH1  CH3E    60.0     120.0
+ANGLE CH1E NH1  H       35.0     120.0
+ANGLE CH1E NH1E CH3E    65.0     120.0
+ANGLE CH1E NH2  CH2E    60.0     120.0
+ANGLE CH1E NH2  H       35.0     120.0
+ANGLE CH1E NH2E CH2E    65.0     120.0
+ANGLE CH1E NH3  HC      35.0     109.5
+ANGLE CH1E NH3  CH2E    35.0     109.5
+ANGLE CH1E OH1  H       35.0     109.5
+ANGLE CH2E C    CR1E    70.0     121.5
+ANGLE CH2E C    N       20.0     117.5
+ANGLE CH2E C    NH1     20.0     117.5
+ANGLE CH2E C    NH1E    20.0     117.5
+ANGLE CH2E C    NH2     20.0     117.5
+ANGLE CH2E C    NH2E    20.0     117.5
+ANGLE CH2E C    NR      60.0     116.0
+ANGLE CH2E C    O       85.0     121.6
+ANGLE CH2E C    OC      85.0     118.5
+ANGLE CH2E C    OH1     85.0     120.0
+ANGLE CH2E C    OH1E    85.0     120.0
+ANGLE CH2E CH1E CH3E    50.0     111.5
+ANGLE CH2E CH1E N       65.0     104.0
+ANGLE CH2E CH1E NH1     65.0     110.0
+ANGLE CH2E CH1E NH1E    65.0     110.0
+ANGLE CH2E CH1E NH2     65.0     110.0
+ANGLE CH2E CH1E NH2E    65.0     110.0
+ANGLE CH2E CH1E NH3     65.0     110.0
+ANGLE CH2E CH1E NH3E    65.0     110.0
+ANGLE CH2E CH2E CH2E    45.0     110.0
+ANGLE CH2E CH2E CH3E    45.0     111.0
+ANGLE CH2E CH2E N       65.0     105.0
+ANGLE CH2E CH2E NH1     65.0     111.0
+ANGLE CH2E CH2E NH1E    65.0     111.0
+ANGLE CH2E CH2E NH2     65.0     109.5
+ANGLE CH2E CH2E NH2E    65.0     109.5
+ANGLE CH2E CH2E NH3     65.0     110.5
+ANGLE CH2E CH2E NH3E    65.0     110.5
+ANGLE CH2E CH2E S       50.0     112.5
+ANGLE CH2E N    CH3E    60.0     109.5
+ANGLE CH2E NH1  CH3E    60.0     120.0
+ANGLE CH2E NH1  H       35.0     120.0
+ANGLE CH2E NH1E CH3E    65.0     120.0
+ANGLE CH2E NH2  H       35.0     120.0
+ANGLE CH2E NH3  HC      35.0     109.5
+ANGLE CH2E OH1  H       35.0     109.5
+ANGLE CH2E S    CH3E    50.0      99.5
+ANGLE CH2E S    S       50.0     104.2
+ANGLE CH3E C    N       20.0     117.5
+ANGLE CH3E C    NH1     20.0     117.5
+ANGLE CH3E C    NH1E    20.0     117.5
+ANGLE CH3E C    O       85.0     121.5
+ANGLE CH3E CH1E CH3E    50.0     111.0
+ANGLE CH3E CH1E NH1     65.0     108.5
+ANGLE CH3E CH1E NH1E    65.0     108.5
+ANGLE CH3E CH1E NH2     65.0     109.5
+ANGLE CH3E CH1E NH2E    65.0     109.5
+ANGLE CH3E CH1E NH3     65.0     109.5
+ANGLE CH3E CH1E NH3E    65.0     109.5
+ANGLE CH3E CH1E OH1     60.0     110.5
+ANGLE CH3E CH1E OH1E    60.0     110.5
+ANGLE CH3E NH1  H       35.0     120.0
+ANGLE CR1E C    CR1E    65.0     120.5
+ANGLE CR1E C    NH1     65.0     110.5
+ANGLE CR1E C    NH1E    65.0     110.5
+ANGLE CR1E C    NP      65.0     122.5
+ANGLE CR1E C    NR      65.0     122.5
+ANGLE CR1E C    OH1     65.0     119.0
+ANGLE CR1E C    OH1E    65.0     119.0
+ANGLE CR1E CR1E CR1E    90.0     120.5
+ANGLE CR1E NH1  CR1E    65.0     110.0
+ANGLE CR1E NH1  H       35.0     120.0
+ANGLE CR1E NH1E CR1E    80.0     110.0
+ANGLE CR1E NR   CR1E    65.0     110.0
+ANGLE CR1E NR   FE      30.0     124.8
+ANGLE CT   C    N       20.0     117.5
+ANGLE CT   C    NH1     20.0     117.5
+ANGLE CT   C    NH2     20.0     117.5
+ANGLE CT   C    O       85.0     121.5
+ANGLE CT   C    OC      85.0     118.5
+ANGLE CT   C    OH1     85.0     120.0
+ANGLE CT   CT   CT      45.0     111.00
+ANGLE CT   CT   HA      40.0     109.50
+ANGLE CT   CT   N       65.0     105.00
+ANGLE CT   CT   NC2     65.0     110.00
+ANGLE CT   CT   NH1     65.0     110.00
+ANGLE CT   CT   NH2     65.0     110.00
+ANGLE CT   CT   NH3     65.0     110.00
+ANGLE CT   CT   OH1     50.0     109.50
+ANGLE CT   CT   S       50.0     112.50
+ANGLE CT   N    CT      60.0     110.0
+ANGLE CT   NC2  HC      35.0     120.0
+ANGLE CT   NH1  H       35.0     120.0
+ANGLE CT   NH2  H       35.0     120.0
+ANGLE CT   NH3  HC      35.0     109.5
+ANGLE CT   OH1  H       35.0     109.5
+ANGLE CT   S    CT      50.0      99.5
+ANGLE CT   S    S       50.0     104.2
+ANGLE FE   CM   OM       5.0      90.0
+ANGLE FE   OM   OM       0.0     180.0
+ANGLE H    NH2  H       40.0     125.0
+ANGLE H    OH2  H       55.0     104.5
+ANGLE HA   C    NH1     40.0     120.0
+ANGLE HA   C    NH2     40.0     120.0
+ANGLE HA   C    NR      40.0     120.0
+ANGLE HA   C    O       85.0     121.5
+ANGLE HA   CT   HA      40.0     109.5
+ANGLE HA   CT   N       50.0     109.5
+ANGLE HA   CT   NC2     50.0     109.5
+ANGLE HA   CT   NH1     50.0     109.5
+ANGLE HA   CT   NH3     50.0     109.5
+ANGLE HA   CT   OH1     50.0     109.5
+ANGLE HA   CT   S       40.0     109.5
+ANGLE HC   NC2  HC      40.0     120.0
+ANGLE HC   NH3  HC      40.0     109.5
+ANGLE N    C    O       85.0     121.0
+ANGLE NC2  C    NC2     70.0     120.0
+ANGLE NC2  C    NH1     70.0     120.0
+ANGLE NC2E C    NC2E    70.0     120.0
+ANGLE NC2E C    NH1E    70.0     120.0
+ANGLE NH1  C    NR      70.0     120.0
+ANGLE NH1  C    O       65.0     121.0
+ANGLE NH1  CR1E NH1     70.0     109.0
+ANGLE NH1  CR1E NR      70.0     109.0
+ANGLE NH1E C    O       65.0     121.0
+ANGLE NH1E CR1E NH1E    70.0     109.0
+ANGLE NH1E CR1E NR      70.0     109.0
+ANGLE NH2  C    O       65.0     121.0
+ANGLE NH2E C    O       65.0     121.0
+ANGLE NP   FE   CM      5.0       90.0
+ANGLE NP   FE   NP      50.0      90.0
+ANGLE NP   FE   NR      5.0      115.0
+ANGLE NP   FE   OM      5.0       90.0
+ANGLE NR   FE   CM      5.0      180.0
+ANGLE NR   FE   OM      5.0      180.0
+ANGLE O    C    OH1     85.0     120.0
+ANGLE O    C    OH1E    85.0     120.0
+ANGLE OC   C    OC      85.0     122.5
+ANGLE OC   S    OC      85.0     109.5
+
+TORSION CH1E C    N    CH1E    10.0       2.0     180.0
+TORSION CH2E C    N    CH1E    10.0       2.0     180.0
+TORSION CR1E C    C    CR1E     5.0       2.0     180.0
+TORSION CR1E C    C    C        2.5       2.0     180.0
+TORSION CR1E C    C    NH1      2.5       2.0     180.0
+TORSION CR1E C    C    NH1E     2.5       2.0     180.0
+TORSION X    C    CH1E X        0.0       3.0       0.0
+TORSION X    C    CH2E X        0.0       3.0       0.0
+TORSION X    C    CR1E X       10.0       2.0     180.0
+TORSION X    C    CT   X        0.0       3.0       0.0
+TORSION X    C    N    X        8.2       2.0     180.0
+TORSION X    C    NC2  X        8.2       2.0     180.0
+TORSION X    C    NH1  X        8.2       2.0     180.0
+TORSION X    C    NH1E X        8.2       2.0     180.0
+TORSION X    C    NH2  X        8.2       2.0     180.0
+TORSION X    C    OH1  X        1.8       2.0     180.0
+TORSION X    CH1E CH1E X        1.6       3.0       0.0
+TORSION X    CH1E CH2E X        1.6       3.0       0.0
+TORSION X    CH1E N    X        0.3       3.0       0.0
+TORSION X    CH1E NH1  X        0.3       3.0       0.0
+TORSION X    CH1E NH1E X        0.3       3.0       0.0
+TORSION X    CH1E NH2  X        1.8       3.0       0.0
+TORSION X    CH1E NH3  X        0.6       3.0       0.0
+TORSION X    CH1E OH1  X        0.5       3.0       0.0
+TORSION X    CH2E CH2E X        1.6       3.0       0.0
+TORSION X    CH2E N    X        0.3       3.0       0.0
+TORSION X    CH2E NH1  X        0.3       3.0       0.0
+TORSION X    CH2E NH1E X        0.3       3.0       0.0
+TORSION X    CH2E NH2  X        0.6       3.0       0.0
+TORSION X    CH2E NH3  X        0.6       3.0       0.0
+TORSION X    CH2E OH1  X        0.5       3.0       0.0
+TORSION X    CH2E S    X        1.2       2.0       0.0
+TORSION X    CT   CT   X        1.6       3.0       0.0
+TORSION X    CT   N    X        0.3       3.0       0.0
+TORSION X    CT   NC2  X        0.3       3.0       0.0
+TORSION X    CT   NH1  X        0.3       3.0       0.0
+TORSION X    CT   NH2  X        0.6       3.0       0.0
+TORSION X    CT   NH3  X        0.6       3.0       0.0
+TORSION X    CT   OH1  X        0.5       3.0       0.0
+TORSION X    CT   S    X        1.2       2.0       0.0
+TORSION X    FE   NR   X        0.05      4.0       0.0
+TORSION X    FE   CM   X        0.05      4.0       0.0
+TORSION X    FE   OM   X        0.00      4.0       0.0
+TORSION X    S    S    X        4.0       2.0       0.0
+
+IMPROPER C    C    CR1E CH2E    90.0       0.0
+IMPROPER C    CR1E C    CH2E    90.0       0.0
+IMPROPER C    CR1E CR1E CH2E    90.0       0.0
+IMPROPER C    CR1E NH1  CH2E    90.0       0.0
+IMPROPER C    NH1  CR1E CH2E    90.0       0.0
+IMPROPER C    CR1E CR1E OH1    150.0       0.0
+IMPROPER C    CR1E CR1E OH1E   150.0       0.0
+IMPROPER C    H    H    NH2     45.0       0.0
+IMPROPER C    OC   OC   CH1E   100.0       0.0
+IMPROPER C    OC   OC   CH2E   100.0       0.0
+IMPROPER C    X    X    C       25.0       0.0
+IMPROPER C    X    X    CH2E    90.0       0.0
+IMPROPER C    X    X    CH3E    90.0       0.0
+IMPROPER C    X    X    CR1E    25.0       0.0
+IMPROPER C    X    X    H       75.0       0.0
+IMPROPER C    X    X    HA      75.0       0.0
+IMPROPER C    X    X    NH1    100.0       0.0
+IMPROPER C    X    X    NH1E   100.0       0.0
+IMPROPER C    X    X    O      100.0       0.0
+IMPROPER C    X    X    OC     100.0       0.0
+IMPROPER C    X    X    OH1    150.0       0.0
+IMPROPER C    X    X    OH1E   150.0       0.0
+IMPROPER CH1E X    X    CH1E    55.0     35.26439
+IMPROPER CH1E X    X    CH2E    55.0     35.26439
+IMPROPER CH1E X    X    CH3E    55.0     35.26439
+IMPROPER CR1E X    X    CR1E    25.0       0.0
+IMPROPER CR1E X    X    NH1     25.0       0.0
+IMPROPER CR1E X    X    NH1E    25.0       0.0
+IMPROPER FE   X    X    NP      20.0       0.0
+IMPROPER H    X    X    O       45.0       0.0
+IMPROPER N    CH1E CH2E C       45.0       0.0
+IMPROPER N    X    X    CH2E    45.0       0.0
+IMPROPER N    X    X    CT      45.0       0.0
+IMPROPER NC2  X    X    CT      45.0       0.0
+IMPROPER NC2  X    X    HC      45.0       0.0
+IMPROPER NH1  X    X    CH1E    45.0       0.0
+IMPROPER NH1  X    X    CH2E    45.0       0.0
+IMPROPER NH1  X    X    CH3E    45.0       0.0
+IMPROPER NH1  X    X    CT      45.0       0.0
+IMPROPER NH1  X    X    H       45.0       0.0
+IMPROPER NH1  X    X    NH1     25.0       0.0
+IMPROPER NH1  X    X    NR      25.0       0.0
+IMPROPER NH1E X    X    NH1E    25.0       0.0
+IMPROPER NH1E X    X    NR      25.0       0.0
+IMPROPER NH2  X    X    H       45.0       0.0
+IMPROPER NR   X    X    C       25.0       0.0
+IMPROPER NR   X    X    CR1E    25.0       0.0
+IMPROPER NR   X    X    CT      25.0       0.0
+
+NONBOND C      0  12.01100    1.6500   5.0       1.8000
+NONBOND CH1E   1  13.01900    1.3500   6.0       1.8500
+NONBOND CH2E   2  14.02700    1.7700   7.0       1.9000
+NONBOND CH3E   3  15.03500    2.1700   8.0       1.9500
+NONBOND CM     4  12.01100    1.6500   5.0       1.8000
+NONBOND CR1E   5  13.01900    2.0700   6.0       1.9000
+NONBOND CT     6  12.01100    0.9800   5.0       1.8000
+NONBOND FE     7  55.84700    0.0100   0.0001    0.6500
+NONBOND H      8   1.00800    0.0440   1.0       0.8000
+NONBOND HA     9   1.00800    0.1000   1.0       1.4680
+NONBOND HC    10   1.00800    0.0440   1.0       0.8000
+NONBOND N     11  14.00670    1.1000   6.0       1.6000
+NONBOND NC2   12  14.00670    1.1000   6.0       1.6000
+NONBOND NC2E  13  16.02270    1.7000   8.0       1.7000
+NONBOND NH1   14  14.00670    1.1000   6.0       1.6000
+NONBOND NH1E  15  15.01470    1.4000   7.0       1.6500
+NONBOND NH2   16  14.00670    1.1000   6.0       1.6000
+NONBOND NH2E  17  16.02270    1.7000   8.0       1.7000
+NONBOND NH3   18  14.00670    1.1000   6.0       1.6000
+NONBOND NH3E  19  17.03070    2.1300   9.0       1.7500
+NONBOND NP    20  14.00670    1.1000   6.0       1.6000
+NONBOND NR    21  14.00670    1.1000   6.0       1.6000
+NONBOND O     22  15.99940    0.8400   6.0       1.6000
+NONBOND OC    23  15.99940    2.1400   6.0       1.6000
+NONBOND OH1   24  15.99940    0.8400   6.0       1.6000
+NONBOND OH1E  25  17.00740    1.2000   7.0       1.6500
+NONBOND OH2   26  15.99940    0.8400   6.0       1.6000
+NONBOND OH2E  27  18.01540    1.2000   7.0       1.7000
+NONBOND OM    28  15.99940    0.8400   6.0       1.6000
+NONBOND S     29  32.06000    0.3400  16.0       1.9000
+NONBOND SH1E  30  33.06800    0.3400  16.0       1.9500
+
+HBOND NC2  N       -3.00      3.0
+HBOND NC2  NC2     -3.00      3.0
+HBOND NC2  NC2E    -3.00      3.0
+HBOND NC2  NH1     -3.00      3.0
+HBOND NC2  NH1E    -3.00      3.0
+HBOND NC2  NH2     -3.00      3.0
+HBOND NC2  NH2E    -3.00      3.0
+HBOND NC2  NP      -3.00      3.0
+HBOND NC2  NR      -3.00      3.0
+HBOND NC2  O       -3.50      2.9
+HBOND NC2  OC      -3.50      2.9
+HBOND NC2E N       -3.00      3.0
+HBOND NC2E NC2     -3.00      3.0
+HBOND NC2E NC2E    -3.00      3.0
+HBOND NC2E NH1     -3.00      3.0
+HBOND NC2E NH1E    -3.00      3.0
+HBOND NC2E NH2     -3.00      3.0
+HBOND NC2E NH2E    -3.00      3.0
+HBOND NC2E NP      -3.00      3.0
+HBOND NC2E NR      -3.00      3.0
+HBOND NC2E O       -3.50      2.9
+HBOND NC2E OC      -3.50      2.9
+HBOND NH1  N       -3.00      3.0
+HBOND NH1  NC2     -3.00      3.0
+HBOND NH1  NC2E    -3.00      3.0
+HBOND NH1  NH1     -3.00      3.0
+HBOND NH1  NH1E    -3.00      3.0
+HBOND NH1  NH2     -3.00      3.0
+HBOND NH1  NH2E    -3.00      3.0
+HBOND NH1  NP      -3.00      3.0
+HBOND NH1  NR      -3.00      3.0
+HBOND NH1  O       -3.50      2.9
+HBOND NH1  OC      -3.50      2.9
+HBOND NH1E N       -3.00      3.0
+HBOND NH1E NC2     -3.00      3.0
+HBOND NH1E NC2E    -3.00      3.0
+HBOND NH1E NH1     -3.00      3.0
+HBOND NH1E NH1E    -3.00      3.0
+HBOND NH1E NH2     -3.00      3.0
+HBOND NH1E NH2E    -3.00      3.0
+HBOND NH1E NP      -3.00      3.0
+HBOND NH1E NR      -3.00      3.0
+HBOND NH1E O       -3.50      2.9
+HBOND NH1E OC      -3.50      2.9
+HBOND NH2  N       -3.00      3.0
+HBOND NH2  NC2     -3.00      3.0
+HBOND NH2  NC2E    -3.00      3.0
+HBOND NH2  NH1     -3.00      3.0
+HBOND NH2  NH1E    -3.00      3.0
+HBOND NH2  NH2     -3.00      3.0
+HBOND NH2  NH2E    -3.00      3.0
+HBOND NH2  NP      -3.00      3.0
+HBOND NH2  NR      -3.00      3.0
+HBOND NH2  O       -3.50      2.9
+HBOND NH2  OC      -3.50      2.9
+HBOND NH2E N       -3.00      3.0
+HBOND NH2E NC2     -3.00      3.0
+HBOND NH2E NC2E    -3.00      3.0
+HBOND NH2E NH1     -3.00      3.0
+HBOND NH2E NH1E    -3.00      3.0
+HBOND NH2E NH2     -3.00      3.0
+HBOND NH2E NH2E    -3.00      3.0
+HBOND NH2E NP      -3.00      3.0
+HBOND NH2E NR      -3.00      3.0
+HBOND NH2E O       -3.50      2.9
+HBOND NH2E OC      -3.50      2.9
+HBOND NH3  N       -3.00      3.0
+HBOND NH3  NC2     -3.00      3.0
+HBOND NH3  NC2E    -3.00      3.0
+HBOND NH3  NH1     -3.00      3.0
+HBOND NH3  NH1E    -3.00      3.0
+HBOND NH3  NH2     -3.00      3.0
+HBOND NH3  NH2E    -3.00      3.0
+HBOND NH3  NP      -3.00      3.0
+HBOND NH3  NR      -3.00      3.0
+HBOND NH3  O       -3.50      2.9
+HBOND NH3  OC      -3.50      2.9
+HBOND NH3  OH1     -3.50      2.9
+HBOND NH3  OH1E    -3.50      2.9
+HBOND NH3  OH2     -3.50      2.9
+HBOND NH3  OH2E    -3.50      2.9
+HBOND NH3E N       -3.00      3.0
+HBOND NH3E NC2     -3.00      3.0
+HBOND NH3E NC2E    -3.00      3.0
+HBOND NH3E NH1     -3.00      3.0
+HBOND NH3E NH1E    -3.00      3.0
+HBOND NH3E NH2     -3.00      3.0
+HBOND NH3E NH2E    -3.00      3.0
+HBOND NH3E NP      -3.00      3.0
+HBOND NH3E NR      -3.00      3.0
+HBOND NH3E O       -3.50      2.9
+HBOND NH3E OC      -3.50      2.9
+HBOND NH3E OH1     -3.50      2.9
+HBOND NH3E OH1E    -3.50      2.9
+HBOND NH3E OH2     -3.50      2.9
+HBOND NH3E OH2E    -3.50      2.9
+HBOND OH1  N       -4.00      2.85
+HBOND OH1  NC2     -4.00      2.85
+HBOND OH1  NC2E    -4.00      2.85
+HBOND OH1  NH1     -4.00      2.85
+HBOND OH1  NH1E    -4.00      2.85
+HBOND OH1  NH2     -4.00      2.85
+HBOND OH1  NH2E    -4.00      2.85
+HBOND OH1  NP      -4.00      2.85
+HBOND OH1  NR      -4.00      2.85
+HBOND OH1  O       -4.25      2.75
+HBOND OH1  OC      -4.25      2.75
+HBOND OH1  OH1     -4.25      2.75
+HBOND OH1  OH1E    -4.25      2.75
+HBOND OH1  OH2     -4.25      2.75
+HBOND OH1  OH2E    -4.25      2.75
+HBOND OH1E N       -4.00      2.85
+HBOND OH1E NC2     -4.00      2.85
+HBOND OH1E NC2E    -4.00      2.85
+HBOND OH1E NH1     -4.00      2.85
+HBOND OH1E NH1E    -4.00      2.85
+HBOND OH1E NH2     -4.00      2.85
+HBOND OH1E NH2E    -4.00      2.85
+HBOND OH1E NP      -4.00      2.85
+HBOND OH1E NR      -4.00      2.85
+HBOND OH1E O       -4.25      2.75
+HBOND OH1E OC      -4.25      2.75
+HBOND OH1E OH1     -4.25      2.75
+HBOND OH1E OH1E    -4.25      2.75
+HBOND OH1E OH2     -4.25      2.75
+HBOND OH1E OH2E    -4.25      2.75
+HBOND OH2  N       -4.00      2.85
+HBOND OH2  NC2     -4.00      2.85
+HBOND OH2  NC2E    -4.00      2.85
+HBOND OH2  NH1     -4.00      2.85
+HBOND OH2  NH1E    -4.00      2.85
+HBOND OH2  NH2     -4.00      2.85
+HBOND OH2  NH2E    -4.00      2.85
+HBOND OH2  NP      -4.00      2.85
+HBOND OH2  NR      -4.00      2.85
+HBOND OH2  O       -4.25      2.75
+HBOND OH2  OC      -4.25      2.75
+HBOND OH2  OH1     -4.25      2.75
+HBOND OH2  OH1E    -4.25      2.75
+HBOND OH2  OH2     -4.25      2.75
+HBOND OH2  OH2E    -4.25      2.75
+HBOND OH2E N       -4.00      2.85
+HBOND OH2E NC2     -4.00      2.85
+HBOND OH2E NC2E    -4.00      2.85
+HBOND OH2E NH1     -4.00      2.85
+HBOND OH2E NH1E    -4.00      2.85
+HBOND OH2E NH2     -4.00      2.85
+HBOND OH2E NH2E    -4.00      2.85
+HBOND OH2E NP      -4.00      2.85
+HBOND OH2E NR      -4.00      2.85
+HBOND OH2E O       -4.25      2.75
+HBOND OH2E OC      -4.25      2.75
+HBOND OH2E OH1     -4.25      2.75
+HBOND OH2E OH1E    -4.25      2.75
+HBOND OH2E OH2     -4.25      2.75
+HBOND OH2E OH2E    -4.25      2.75
+
+! RESIDUE DATA from vec1 (takeoff midpoint to s/c CofG, unsplit loops)
+! RESIDUE A 3.142 1.0 CA  10 0.0194 0.0452 0.0839 0.1006 0.1316 0.1523 0.1690 0.1535 0.1071 0.0374 
+! RESIDUE C 3.142 1.0 CA  10 0.0240 0.0625 0.1683 0.1442 0.1394 0.1298 0.1106 0.1346 0.0481 0.0385 
+! RESIDUE D 3.142 1.0 CA  10 0.0036 0.0132 0.0456 0.0564 0.1573 0.1609 0.2029 0.1801 0.1333 0.0468 
+! RESIDUE E 3.142 1.0 CA  10 0.0103 0.0239 0.0410 0.0872 0.1470 0.1624 0.1829 0.1863 0.1179 0.0410 
+! RESIDUE F 3.142 1.0 CA  10 0.0302 0.0779 0.1030 0.1281 0.1834 0.1482 0.1206 0.0980 0.0930 0.0176 
+! RESIDUE G 3.142 1.0 CA  10 0.0000 0.0000 0.0000 0.0026 0.9949 0.0000 0.0017 0.0000 0.0000 0.0009 
+! RESIDUE H 3.142 1.0 CA  10 0.0040 0.0480 0.0680 0.0840 0.1480 0.1480 0.1720 0.2240 0.0760 0.0280 
+! RESIDUE I 3.142 1.0 CA  10 0.0213 0.0711 0.1090 0.1351 0.1398 0.1185 0.1777 0.1137 0.1019 0.0118 
+! RESIDUE K 3.142 1.0 CA  10 0.0031 0.0156 0.0312 0.0671 0.1170 0.1888 0.1810 0.2106 0.1373 0.0484 
+! RESIDUE L 3.142 1.0 CA  10 0.0165 0.0687 0.1181 0.1511 0.1277 0.1607 0.1538 0.1181 0.0577 0.0275 
+! RESIDUE M 3.142 1.0 CA  10 0.0229 0.0800 0.1200 0.0971 0.1600 0.1886 0.1143 0.0857 0.1029 0.0286 
+! RESIDUE N 3.142 1.0 CA  10 0.0117 0.0350 0.0379 0.0627 0.1152 0.1385 0.1983 0.1968 0.1429 0.0612 
+! RESIDUE P 3.142 1.0 CA  10 0.0087 0.0283 0.0772 0.1011 0.1446 0.1630 0.1793 0.1674 0.1022 0.0283 
+! RESIDUE Q 3.142 1.0 CA  10 0.0237 0.0395 0.0526 0.0868 0.1553 0.1237 0.1868 0.1684 0.1132 0.0500 
+! RESIDUE R 3.142 1.0 CA  10 0.0120 0.0259 0.0499 0.0938 0.1377 0.1756 0.1856 0.1617 0.1257 0.0319 
+! RESIDUE S 3.142 1.0 CA  10 0.0098 0.0379 0.0722 0.1151 0.1236 0.1444 0.1958 0.1640 0.1028 0.0343 
+! RESIDUE T 3.142 1.0 CA  10 0.0177 0.0505 0.0505 0.1010 0.1378 0.1664 0.1364 0.1651 0.1228 0.0518 
+! RESIDUE V 3.142 1.0 CA  10 0.0198 0.0752 0.0931 0.1446 0.1426 0.1307 0.1446 0.1228 0.0990 0.0277 
+! RESIDUE W 3.142 1.0 CA  10 0.0455 0.0519 0.0909 0.1883 0.1558 0.1753 0.1104 0.0974 0.0714 0.0130 
+! RESIDUE Y 3.142 1.0 CA  10 0.0079 0.0499 0.1024 0.1076 0.1627 0.1601 0.1837 0.1181 0.0814 0.0262 
+
+
+! RESIDUE data from vec5 (takeoff midpoint to distal atom, split loops)
+RESIDUE A 3.142 1.0 CB  10 0.0209 0.0482 0.0754 0.0995 0.1316 0.1396 0.1701 0.1669 0.1059 0.0417 
+RESIDUE C 3.142 1.0 SG  10 0.0318 0.1019 0.1465 0.1592 0.1529 0.1210 0.1146 0.1210 0.0446 0.0064 
+RESIDUE D 3.142 1.0 CG  10 0.0058 0.0073 0.0511 0.0628 0.1401 0.1839 0.1985 0.1664 0.1387 0.0453 
+RESIDUE E 3.142 1.0 CD  10 0.0089 0.0201 0.0536 0.0692 0.1451 0.1741 0.1987 0.1496 0.1295 0.0513 
+RESIDUE F 3.142 1.0 CZ  10 0.0396 0.0732 0.1189 0.1524 0.1616 0.1463 0.1220 0.0854 0.0701 0.0305 
+RESIDUE G 3.142 1.0 CA  10 0.0000 0.0000 0.0000 0.0000 1.0000 0.0000 0.0000 0.0000 0.0000 0.0000 
+RESIDUE H 3.142 1.0 CE1 10 0.0152 0.0303 0.0859 0.0808 0.1465 0.1364 0.1717 0.1919 0.1061 0.0354 
+RESIDUE I 3.142 1.0 CD1 10 0.0287 0.0688 0.0917 0.1605 0.1404 0.1461 0.1347 0.1318 0.0802 0.0172 
+RESIDUE K 3.142 1.0 NZ  10 0.0060 0.0120 0.0400 0.0740 0.1720 0.1640 0.1800 0.1500 0.1560 0.0460 
+RESIDUE L 3.142 1.0 CG  10 0.0253 0.0693 0.1149 0.1334 0.1436 0.1605 0.1385 0.1149 0.0777 0.0220 
+RESIDUE M 3.142 1.0 CE  10 0.0282 0.0563 0.1197 0.0775 0.2113 0.1620 0.1268 0.0986 0.0845 0.0352 
+RESIDUE N 3.142 1.0 CG  10 0.0088 0.0335 0.0406 0.0723 0.1093 0.1481 0.1817 0.2116 0.1393 0.0547 
+RESIDUE P 3.142 1.0 CG  10 0.0082 0.0368 0.0778 0.0914 0.1282 0.1419 0.1801 0.1869 0.1078 0.0409 
+RESIDUE Q 3.142 1.0 CD  10 0.0193 0.0482 0.0579 0.0804 0.1350 0.1254 0.1994 0.1608 0.1222 0.0514 
+RESIDUE R 3.142 1.0 CZ  10 0.0150 0.0251 0.0451 0.1003 0.1429 0.1805 0.1855 0.1604 0.0952 0.0501 
+RESIDUE S 3.142 1.0 OG  10 0.0110 0.0440 0.0645 0.1006 0.1525 0.1431 0.2044 0.1761 0.0723 0.0314 
+RESIDUE T 3.142 1.0 CB  10 0.0150 0.0583 0.0583 0.1050 0.1150 0.1633 0.1417 0.1617 0.1317 0.0500 
+RESIDUE V 3.142 1.0 CB  10 0.0294 0.0735 0.1201 0.1152 0.1446 0.1103 0.1593 0.1348 0.0735 0.0392 
+RESIDUE W 3.142 1.0 CH2 10 0.0333 0.0583 0.1083 0.1750 0.1167 0.2167 0.1083 0.0833 0.0750 0.0250 
+RESIDUE Y 3.142 1.0 CZ  10 0.0158 0.0601 0.0981 0.1139 0.1361 0.1835 0.1582 0.1203 0.0886 0.0253 

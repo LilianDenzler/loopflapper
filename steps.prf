@@ -1,0 +1,39 @@
+# ProFit script to evaluate an antibody model.
+# Assumes that the PDB files contain exactly the same set of
+# residues and that they are Kabat, Chothia or Martin numbered.
+
+quiet
+ignore
+atoms *
+fit             # global all atoms              
+rzone H95-H102  # global all atoms H3           
+atoms ca                                        
+fit             # global CA atoms               
+rzone *
+rzone H95-H102  # global CA atoms H3            
+
+zone *
+zone H95-H102
+atoms *
+fit             # local all atoms H3            
+atoms ca
+fit             # local CA atoms  H3            
+
+zone *
+zone H*:H*
+atoms *
+fit             # H chain global all atoms      
+rzone *
+rzone H95-H102  # H chain global all atoms H3   
+atoms ca
+fit             # H chain global CA atoms       
+rzone *
+rzone H95-H102  # H chain global CA atoms H3    
+
+zone *
+zone L*:L*
+atoms *
+fit             # L chain global all atoms      
+atoms ca
+fit             # L chain global CA atoms       
+
